@@ -115,6 +115,15 @@ export const projects: Project[] = [
     github: "https://github.com/furkandalyan/Sheet-Sweep.git",
   },
   {
+    slug: "qr-code-generator-scanner",
+    title: "QR Code Generator And Scanner",
+    summary:
+      "QR kod uretme ve tarama uygulamasi. Metin/URL ile QR olustur, renk/boyut ozellestir, PNG/JPG kaydet, webcam ile tara.",
+    lang: "tr",
+    tags: ["Python", "Desktop", "QR"],
+    github: "https://github.com/furkandalyan/QR-Code-Generator-Scanner.git",
+  },
+  {
     slug: "sample-project",
     title: "Sample Project",
     summary: "Short summary: What does this project solve?",
@@ -219,6 +228,15 @@ export const projects: Project[] = [
     lang: "en",
     tags: ["Python", "Desktop", "Data"],
     github: "https://github.com/furkandalyan/Sheet-Sweep.git",
+  },
+  {
+    slug: "qr-code-generator-scanner",
+    title: "QR Code Generator And Scanner",
+    summary:
+      "Generate and scan QR codes. Create from text/URL, customize colors and size, save PNG/JPG, scan via webcam or image.",
+    lang: "en",
+    tags: ["Python", "Desktop", "QR"],
+    github: "https://github.com/furkandalyan/QR-Code-Generator-Scanner.git",
   },
 ];
 
