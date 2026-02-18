@@ -1,4 +1,4 @@
-﻿export type Project = {
+export type Project = {
   slug: string;
   title: string;
   summary: string;
@@ -10,8 +10,8 @@
 export const projects: Project[] = [
   {
     slug: "sample-project",
-    title: "Örnek Proje",
-    summary: "Kısa açıklama: Bu proje neyi çözüyor?",
+    title: "Ornek Proje",
+    summary: "Kisa aciklama: Bu proje neyi cozer?",
     lang: "tr",
     tags: ["SaaS", "Django"],
   },
@@ -19,7 +19,7 @@ export const projects: Project[] = [
     slug: "flappy-bird-game",
     title: "Flappy Bird Game",
     summary:
-      "Pygame ile geliştirilmiş Flappy Bird klonu. Özel tasarımlar, PNG skor göstergesi, akıcı kontroller ve kalıcı en yüksek skor sistemi.",
+      "Pygame ile gelistirilmis Flappy Bird klonu. Ozel tasarimlar, PNG skor gostergesi, akici kontroller ve kalici en yuksek skor sistemi.",
     lang: "tr",
     tags: ["Python", "Pygame"],
     github: "https://github.com/furkandalyan/Flappy-Bird.git",
