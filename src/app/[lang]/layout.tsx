@@ -43,6 +43,12 @@ export default async function LangLayout({
               About
             </Link>
             <Link
+              href={`/${lang}/contact`}
+              className="hover:text-white transition-colors duration-200"
+            >
+              Contact
+            </Link>
+            <Link
               href={`/${oppositeLang}`}
               className="ml-2 px-3 py-1 rounded-full bg-white/10 hover:bg-white/20 text-xs transition-all duration-200 border border-transparent hover:border-white/10"
             >
