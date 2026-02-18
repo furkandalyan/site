@@ -88,6 +88,15 @@ export const projects: Project[] = [
     github: "https://github.com/furkandalyan/PDF-TOOL-BOX.git",
   },
   {
+    slug: "aes-locker",
+    title: "AES Locker",
+    summary:
+      "Modern dosya/klasor sifreleme araci. AES-256, surukle-birak GUI, RSA hibrit destek, anahtar sureleri ve cok dilli arayuz.",
+    lang: "tr",
+    tags: ["Python", "Security", "Desktop"],
+    github: "https://github.com/furkandalyan/AESLocker-.git",
+  },
+  {
     slug: "sample-project",
     title: "Sample Project",
     summary: "Short summary: What does this project solve?",
@@ -165,6 +174,15 @@ export const projects: Project[] = [
     lang: "en",
     tags: ["Python", "Desktop", "OCR"],
     github: "https://github.com/furkandalyan/PDF-TOOL-BOX.git",
+  },
+  {
+    slug: "aes-locker",
+    title: "AES Locker",
+    summary:
+      "User-friendly file/folder encryption tool with AES-256, drag-and-drop GUI, RSA hybrid option, key files, and bilingual UI.",
+    lang: "en",
+    tags: ["Python", "Security", "Desktop"],
+    github: "https://github.com/furkandalyan/AESLocker-.git",
   },
 ];
 
