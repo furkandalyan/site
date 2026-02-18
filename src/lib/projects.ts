@@ -133,6 +133,15 @@ export const projects: Project[] = [
     github: "https://github.com/furkandalyan/borsa-v2.git",
   },
   {
+    slug: "turkey-earthquake",
+    title: "TurkeyEarthquake",
+    summary:
+      "Django tabanli deprem veri platformu. Veri toplama, analiz ve gorsellestirme; istatistik, tahmin ve bolgesel trend sayfalari.",
+    lang: "tr",
+    tags: ["Django", "Data", "Visualization"],
+    github: "https://github.com/furkandalyan/TurkeyEarthquake.git",
+  },
+  {
     slug: "sample-project",
     title: "Sample Project",
     summary: "Short summary: What does this project solve?",
@@ -255,6 +264,15 @@ export const projects: Project[] = [
     lang: "en",
     tags: ["Django", "Finance", "Data"],
     github: "https://github.com/furkandalyan/borsa-v2.git",
+  },
+  {
+    slug: "turkey-earthquake",
+    title: "TurkeyEarthquake",
+    summary:
+      "Django-based earthquake data dashboard with ingestion, analysis, trends, and forecasting views.",
+    lang: "en",
+    tags: ["Django", "Data", "Visualization"],
+    github: "https://github.com/furkandalyan/TurkeyEarthquake.git",
   },
 ];
 
