@@ -43,6 +43,15 @@ export const projects: Project[] = [
     github: "https://github.com/furkandalyan/Snake-Game.git",
   },
   {
+    slug: "smart-data-analyzer",
+    title: "Smart Data Analyzer",
+    summary:
+      "Streamlit tabanli interaktif veri kesif uygulamasi. CSV/Excel/JSON yukle, otomatik analiz ve grafikler olustur, PDF rapor disari aktar.",
+    lang: "tr",
+    tags: ["Python", "Streamlit"],
+    github: "https://github.com/furkandalyan/SmartDataAnalyzer.git",
+  },
+  {
     slug: "sample-project",
     title: "Sample Project",
     summary: "Short summary: What does this project solve?",
@@ -75,6 +84,15 @@ export const projects: Project[] = [
     lang: "en",
     tags: ["Python", "Pygame"],
     github: "https://github.com/furkandalyan/Snake-Game.git",
+  },
+  {
+    slug: "smart-data-analyzer",
+    title: "Smart Data Analyzer",
+    summary:
+      "Interactive data exploration app built with Python and Streamlit. Upload CSV/Excel/JSON, auto-generate insights and charts, export a PDF report.",
+    lang: "en",
+    tags: ["Python", "Streamlit"],
+    github: "https://github.com/furkandalyan/SmartDataAnalyzer.git",
   },
 ];
 
