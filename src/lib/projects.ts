@@ -34,6 +34,15 @@ export const projects: Project[] = [
     github: "https://github.com/furkandalyan/Perfect-Timer-Game.git",
   },
   {
+    slug: "snake-game",
+    title: "Snake Game",
+    summary:
+      "Python ve Pygame ile gelistirilmis modern Snake oyunu. Klasik nostaljiyi akici hareket, sade UI ve genisletilebilir yapiyla sunar.",
+    lang: "tr",
+    tags: ["Python", "Pygame"],
+    github: "https://github.com/furkandalyan/Snake-Game.git",
+  },
+  {
     slug: "sample-project",
     title: "Sample Project",
     summary: "Short summary: What does this project solve?",
@@ -57,6 +66,15 @@ export const projects: Project[] = [
     lang: "en",
     tags: ["Python", "Tkinter"],
     github: "https://github.com/furkandalyan/Perfect-Timer-Game.git",
+  },
+  {
+    slug: "snake-game",
+    title: "Snake Game",
+    summary:
+      "Modern Snake Game built with Python and Pygame. Nostalgic gameplay with smooth movement, simple UI, and an expandable code structure.",
+    lang: "en",
+    tags: ["Python", "Pygame"],
+    github: "https://github.com/furkandalyan/Snake-Game.git",
   },
 ];
 
