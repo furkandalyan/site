@@ -142,6 +142,15 @@ export const projects: Project[] = [
     github: "https://github.com/furkandalyan/TurkeyEarthquake.git",
   },
   {
+    slug: "bug-tracking-system",
+    title: "BugTrackingSystem",
+    summary:
+      "Django tabanli bug tracking sistemi. Rol bazli gorunumler, bug kaydi olusturma/guncelleme ve yonetim paneli.",
+    lang: "tr",
+    tags: ["Django", "Web", "Productivity"],
+    github: "https://github.com/furkandalyan/BugTrackingSystem.git",
+  },
+  {
     slug: "sample-project",
     title: "Sample Project",
     summary: "Short summary: What does this project solve?",
@@ -273,6 +282,15 @@ export const projects: Project[] = [
     lang: "en",
     tags: ["Django", "Data", "Visualization"],
     github: "https://github.com/furkandalyan/TurkeyEarthquake.git",
+  },
+  {
+    slug: "bug-tracking-system",
+    title: "BugTrackingSystem",
+    summary:
+      "Django-based bug tracking system with auth, role-based views, and bug workflows.",
+    lang: "en",
+    tags: ["Django", "Web", "Productivity"],
+    github: "https://github.com/furkandalyan/BugTrackingSystem.git",
   },
 ];
 
