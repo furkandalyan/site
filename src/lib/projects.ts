@@ -124,6 +124,15 @@ export const projects: Project[] = [
     github: "https://github.com/furkandalyan/QR-Code-Generator-Scanner.git",
   },
   {
+    slug: "borsa-v2",
+    title: "borsa-v2",
+    summary:
+      "Django tabanli finans analiz web app. yfinance veri cekimi, Plotly grafikler, teknik indikatorler, BIST sembol kolayligi, izleme listesi ve alarmlar.",
+    lang: "tr",
+    tags: ["Django", "Finance", "Data"],
+    github: "https://github.com/furkandalyan/borsa-v2.git",
+  },
+  {
     slug: "sample-project",
     title: "Sample Project",
     summary: "Short summary: What does this project solve?",
@@ -237,6 +246,15 @@ export const projects: Project[] = [
     lang: "en",
     tags: ["Python", "Desktop", "QR"],
     github: "https://github.com/furkandalyan/QR-Code-Generator-Scanner.git",
+  },
+  {
+    slug: "borsa-v2",
+    title: "borsa-v2",
+    summary:
+      "Django-based finance analytics app with yfinance data, Plotly charts, indicators, BIST helpers, watchlists, alerts, and analysis pages.",
+    lang: "en",
+    tags: ["Django", "Finance", "Data"],
+    github: "https://github.com/furkandalyan/borsa-v2.git",
   },
 ];
 
