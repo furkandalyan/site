@@ -70,6 +70,15 @@ export const projects: Project[] = [
     github: "https://github.com/furkandalyan/Tic-Tac-Toe.git",
   },
   {
+    slug: "fast-writing-game",
+    title: "Fast Writing Game",
+    summary:
+      "Yazi hizini ve dogrulugunu gelistiren yazma uygulamasi. Rastgele cumleler, anlik hata vurgusu, skor tablosu ve surekli yazma modu.",
+    lang: "tr",
+    tags: ["Python", "GUI"],
+    github: "https://github.com/furkandalyan/FastWriting-Game.git",
+  },
+  {
     slug: "sample-project",
     title: "Sample Project",
     summary: "Short summary: What does this project solve?",
@@ -129,6 +138,15 @@ export const projects: Project[] = [
     lang: "en",
     tags: ["Python", "Tkinter"],
     github: "https://github.com/furkandalyan/Tic-Tac-Toe.git",
+  },
+  {
+    slug: "fast-writing-game",
+    title: "Fast Writing Game",
+    summary:
+      "Typing practice app with a modern GUI. Random sentences, real-time mistake highlighting, best-time scoreboard, and continuous writing mode.",
+    lang: "en",
+    tags: ["Python", "GUI"],
+    github: "https://github.com/furkandalyan/FastWriting-Game.git",
   },
 ];
 
