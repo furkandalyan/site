@@ -25,6 +25,15 @@ export const projects: Project[] = [
     github: "https://github.com/furkandalyan/Flappy-Bird.git",
   },
   {
+    slug: "perfect-timer-game",
+    title: "Perfect Timer Game",
+    summary:
+      "Python ve Tkinter ile gelistirilmis refleks oyunu. Hedef sure belirle ve tam aninda durdur: ne erken ne gec, sadece zamanlama ustaligi.",
+    lang: "tr",
+    tags: ["Python", "Tkinter"],
+    github: "https://github.com/furkandalyan/Perfect-Timer-Game.git",
+  },
+  {
     slug: "sample-project",
     title: "Sample Project",
     summary: "Short summary: What does this project solve?",
@@ -39,6 +48,15 @@ export const projects: Project[] = [
     lang: "en",
     tags: ["Python", "Pygame"],
     github: "https://github.com/furkandalyan/Flappy-Bird.git",
+  },
+  {
+    slug: "perfect-timer-game",
+    title: "Perfect Timer Game",
+    summary:
+      "Precision reflex game built with Python and Tkinter. Set a target time and stop the timer at the exact moment. No early clicks. No late ones.",
+    lang: "en",
+    tags: ["Python", "Tkinter"],
+    github: "https://github.com/furkandalyan/Perfect-Timer-Game.git",
   },
 ];
 
