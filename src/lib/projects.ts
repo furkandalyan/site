@@ -106,6 +106,15 @@ export const projects: Project[] = [
     github: "https://github.com/furkandalyan/Password-Vault.git",
   },
   {
+    slug: "sheet-sweep",
+    title: "Sheet Sweep",
+    summary:
+      "Excel temizleme ve donusturme araci. Sutun secimi, bos satir silme, adlari normalize etme, tekrar temizleme, format standardizasyonu.",
+    lang: "tr",
+    tags: ["Python", "Desktop", "Data"],
+    github: "https://github.com/furkandalyan/Sheet-Sweep.git",
+  },
+  {
     slug: "sample-project",
     title: "Sample Project",
     summary: "Short summary: What does this project solve?",
@@ -201,6 +210,15 @@ export const projects: Project[] = [
     lang: "en",
     tags: ["Python", "Security", "Desktop"],
     github: "https://github.com/furkandalyan/Password-Vault.git",
+  },
+  {
+    slug: "sheet-sweep",
+    title: "Sheet Sweep",
+    summary:
+      "Excel cleaner for transforming data. Select columns, remove empty rows, normalize names, dedupe, standardize formats, batch export.",
+    lang: "en",
+    tags: ["Python", "Desktop", "Data"],
+    github: "https://github.com/furkandalyan/Sheet-Sweep.git",
   },
 ];
 
