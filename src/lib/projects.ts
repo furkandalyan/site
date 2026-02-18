@@ -52,6 +52,15 @@ export const projects: Project[] = [
     github: "https://github.com/furkandalyan/SmartDataAnalyzer.git",
   },
   {
+    slug: "borsaapp",
+    title: "BorsaApp",
+    summary:
+      "Turk hisseleri icin teknik analiz platformu. RSI, MACD, Bollinger Bands ve daha fazlasi.",
+    lang: "tr",
+    tags: ["Django", "Finance"],
+    github: "https://github.com/furkandalyan/BorsaApp.git",
+  },
+  {
     slug: "sample-project",
     title: "Sample Project",
     summary: "Short summary: What does this project solve?",
@@ -93,6 +102,15 @@ export const projects: Project[] = [
     lang: "en",
     tags: ["Python", "Streamlit"],
     github: "https://github.com/furkandalyan/SmartDataAnalyzer.git",
+  },
+  {
+    slug: "borsaapp",
+    title: "BorsaApp",
+    summary:
+      "Django-based platform for technical analysis of Turkish stocks. Includes RSI, MACD, Bollinger Bands, and more.",
+    lang: "en",
+    tags: ["Django", "Finance"],
+    github: "https://github.com/furkandalyan/BorsaApp.git",
   },
 ];
 
