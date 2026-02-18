@@ -12,44 +12,48 @@ export default async function LangLayout({
   const oppositeLang = lang === "tr" ? "en" : "tr";
 
   return (
-    <html lang={lang}>
-      <body className="bg-black text-white">
-        <nav className="sticky top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur">
-          <div className="mx-auto max-w-6xl px-6 py-5 flex items-center justify-between">
-            <div className="text-sm tracking-[0.25em] uppercase font-semibold">
-              Furkan Dalyan
-            </div>
-            <div className="flex items-center gap-8 text-sm uppercase tracking-widest">
-              <Link
-                href={`/${lang}/projects`}
-                className="text-white/70 hover:text-white transition"
-              >
-                Projects
-              </Link>
-              <Link
-                href={`/${lang}/blog`}
-                className="text-white/70 hover:text-white transition"
-              >
-                Blog
-              </Link>
-              <Link
-                href={`/${lang}/about`}
-                className="text-white/70 hover:text-white transition"
-              >
-                About
-              </Link>
-              <Link
-                href={`/${oppositeLang}`}
-                className="border border-white/30 px-3 py-1.5 rounded-full text-white/90 hover:border-white hover:text-white transition"
-              >
-                {oppositeLang.toUpperCase()}
-              </Link>
-            </div>
+    <div className="min-h-screen flex flex-col bg-black text-white selection:bg-white selection:text-black">
+      <nav className="sticky top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur-md backdrop-saturate-150 supports-[backdrop-filter]:bg-black/60">
+        <div className="mx-auto max-w-screen-xl px-6 h-14 flex items-center justify-between">
+          <Link 
+            href={`/${lang}`} 
+            className="text-xl font-medium tracking-tight hover:opacity-70 transition-opacity duration-200 cursor-pointer font-serif italic whitespace-nowrap"
+          >
+            Mahir Furkan Dalyan
+          </Link>
+          
+          <div className="flex items-center gap-6 text-[13px] font-medium text-white/80">
+            <Link
+              href={`/${lang}/projects`}
+              className="hover:text-white transition-colors duration-200"
+            >
+              Projects
+            </Link>
+            <Link
+              href={`/${lang}/blog`}
+              className="hover:text-white transition-colors duration-200"
+            >
+              Blog
+            </Link>
+            <Link
+              href={`/${lang}/about`}
+              className="hover:text-white transition-colors duration-200"
+            >
+              About
+            </Link>
+            <Link
+              href={`/${oppositeLang}`}
+              className="ml-2 px-3 py-1 rounded-full bg-white/10 hover:bg-white/20 text-xs transition-all duration-200 border border-transparent hover:border-white/10"
+            >
+              {oppositeLang.toUpperCase()}
+            </Link>
           </div>
-        </nav>
+        </div>
+      </nav>
 
-        <main className="p-10">{children}</main>
-      </body>
-    </html>
+      <main className="flex-1 mx-auto w-full max-w-screen-xl p-6 md:p-10">
+        {children}
+      </main>
+    </div>
   );
 }
