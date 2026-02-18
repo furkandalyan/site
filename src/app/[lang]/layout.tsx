@@ -17,7 +17,8 @@ export default async function LangLayout({
         <div className="mx-auto max-w-screen-xl px-6 h-14 flex items-center justify-between">
           <Link 
             href={`/${lang}`} 
-            className="text-xl font-medium tracking-tight hover:opacity-70 transition-opacity duration-200 cursor-pointer font-serif italic whitespace-nowrap"
+            className="text-2xl font-normal tracking-wide hover:opacity-70 transition-opacity duration-200 cursor-pointer font-serif italic whitespace-nowrap"
+            style={{ fontFamily: 'Times New Roman, serif' }}
           >
             Mahir Furkan Dalyan
           </Link>
