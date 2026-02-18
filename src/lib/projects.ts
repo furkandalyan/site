@@ -97,6 +97,15 @@ export const projects: Project[] = [
     github: "https://github.com/furkandalyan/AESLocker-.git",
   },
   {
+    slug: "password-vault",
+    title: "Password Vault",
+    summary:
+      "AES-256 sifreleme, kategori duzeni, guc metre, QR paylasim ve modern dark/light arayuzlu parola yoneticisi.",
+    lang: "tr",
+    tags: ["Python", "Security", "Desktop"],
+    github: "https://github.com/furkandalyan/Password-Vault.git",
+  },
+  {
     slug: "sample-project",
     title: "Sample Project",
     summary: "Short summary: What does this project solve?",
@@ -183,6 +192,15 @@ export const projects: Project[] = [
     lang: "en",
     tags: ["Python", "Security", "Desktop"],
     github: "https://github.com/furkandalyan/AESLocker-.git",
+  },
+  {
+    slug: "password-vault",
+    title: "Password Vault",
+    summary:
+      "Modern password manager with AES-256, categories, strength meter, QR sharing, and dark/light GUI.",
+    lang: "en",
+    tags: ["Python", "Security", "Desktop"],
+    github: "https://github.com/furkandalyan/Password-Vault.git",
   },
 ];
 
