@@ -7,19 +7,22 @@ export default async function About({
   const isTr = lang === "tr";
 
   return (
-    <div className="max-w-4xl space-y-12">
-      <header className="space-y-3">
-        <h1 className="text-4xl font-bold">Mahir Furkan Dalyan</h1>
-        <p className="text-white/70 text-lg">
+    <div className="max-w-4xl space-y-16">
+      <header className="space-y-4">
+        <h1 className="text-5xl md:text-6xl font-semibold tracking-tight">
+          Mahir Furkan Dalyan
+        </h1>
+        <div className="h-px w-20 bg-white/20" />
+        <p className="text-white/70 text-lg md:text-xl">
           {isTr
             ? "Computer Engineering Student | Product Builder | Tech Entrepreneur (in progress)"
             : "Computer Engineering Student | Product Builder | Tech Entrepreneur (in progress)"}
         </p>
-        <p className="text-white/70 text-lg">Founder Mindset</p>
+        <p className="text-white/60 text-lg md:text-xl">Founder Mindset</p>
       </header>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold">
+        <h2 className="text-2xl md:text-3xl font-semibold">
           {isTr ? "Bakis Acim" : "My Perspective"}
         </h2>
         <p className="text-white/70 leading-relaxed">
@@ -40,7 +43,7 @@ export default async function About({
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold">
+        <h2 className="text-2xl md:text-3xl font-semibold">
           {isTr ? "Urun Gelistirme Yaklasimim" : "My Product Development Approach"}
         </h2>
         <ul className="list-disc pl-5 text-white/70 space-y-1">
@@ -64,7 +67,7 @@ export default async function About({
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold">
+        <h2 className="text-2xl md:text-3xl font-semibold">
           {isTr ? "Teknik Arka Plan" : "Technical Background"}
         </h2>
         <p className="text-white/70 leading-relaxed">
@@ -80,7 +83,7 @@ export default async function About({
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold">
+        <h2 className="text-2xl md:text-3xl font-semibold">
           {isTr ? "Insa Ettigim Sistem Turleri" : "Types of Systems I Build"}
         </h2>
         <ul className="list-disc pl-5 text-white/70 space-y-1">
@@ -116,7 +119,7 @@ export default async function About({
       </section>
 
       <section className="space-y-4">
-        <h2 className="text-2xl font-semibold">
+        <h2 className="text-2xl md:text-3xl font-semibold">
           {isTr ? "Uzun Vadeli Vizyon" : "Long-Term Vision"}
         </h2>
         <p className="text-white/70 leading-relaxed">
