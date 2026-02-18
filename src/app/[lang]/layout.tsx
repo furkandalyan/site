@@ -1,13 +1,13 @@
 import Link from "next/link";
 
-export default function LangLayout({
+export default async function LangLayout({
   children,
   params,
 }: {
   children: React.ReactNode;
-  params: { lang: string };
+  params: Promise<{ lang: string }>;
 }) {
-  const { lang } = params;
+  const { lang } = await params;
 
   const oppositeLang = lang === "tr" ? "en" : "tr";
 
