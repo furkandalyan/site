@@ -79,6 +79,15 @@ export const projects: Project[] = [
     github: "https://github.com/furkandalyan/FastWriting-Game.git",
   },
   {
+    slug: "pdf-tool-box",
+    title: "PDF TOOL BOX",
+    summary:
+      "PDF yonetimi icin masaustu uygulamasi. Birlestirme, bolme, sayfa silme, toplu sifreleme/dondurme, OCR ve metadata duzenleme.",
+    lang: "tr",
+    tags: ["Python", "Desktop", "OCR"],
+    github: "https://github.com/furkandalyan/PDF-TOOL-BOX.git",
+  },
+  {
     slug: "sample-project",
     title: "Sample Project",
     summary: "Short summary: What does this project solve?",
@@ -147,6 +156,15 @@ export const projects: Project[] = [
     lang: "en",
     tags: ["Python", "GUI"],
     github: "https://github.com/furkandalyan/FastWriting-Game.git",
+  },
+  {
+    slug: "pdf-tool-box",
+    title: "PDF TOOL BOX",
+    summary:
+      "Modern PDF desktop app with a dark UI. Merge, split, delete pages, batch encrypt/rotate, OCR text extraction, and metadata editing.",
+    lang: "en",
+    tags: ["Python", "Desktop", "OCR"],
+    github: "https://github.com/furkandalyan/PDF-TOOL-BOX.git",
   },
 ];
 
