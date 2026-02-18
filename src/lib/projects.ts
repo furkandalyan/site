@@ -61,6 +61,15 @@ export const projects: Project[] = [
     github: "https://github.com/furkandalyan/BorsaApp.git",
   },
   {
+    slug: "tic-tac-toe",
+    title: "Tic-Tac-Toe",
+    summary:
+      "Python ile gelistirilmis Tic-Tac-Toe oyunu. CLI ve Tkinter GUI, coklu oyuncu ve AI modlari, tema degistirme, tam ekran ve CSV disari aktarma.",
+    lang: "tr",
+    tags: ["Python", "Tkinter"],
+    github: "https://github.com/furkandalyan/Tic-Tac-Toe.git",
+  },
+  {
     slug: "sample-project",
     title: "Sample Project",
     summary: "Short summary: What does this project solve?",
@@ -111,6 +120,15 @@ export const projects: Project[] = [
     lang: "en",
     tags: ["Django", "Finance"],
     github: "https://github.com/furkandalyan/BorsaApp.git",
+  },
+  {
+    slug: "tic-tac-toe",
+    title: "Tic-Tac-Toe",
+    summary:
+      "Tic-Tac-Toe game app built with Python. Offers CLI and Tkinter GUI, multiplayer and AI modes, theme switching, fullscreen support, and CSV export.",
+    lang: "en",
+    tags: ["Python", "Tkinter"],
+    github: "https://github.com/furkandalyan/Tic-Tac-Toe.git",
   },
 ];
 
