@@ -10,6 +10,21 @@ export default async function LangLayout({
   const { lang } = await params;
 
   const oppositeLang = lang === "tr" ? "en" : "tr";
+  const navLabels: Record<string, { projects: string; blog: string; about: string; contact: string }> = {
+    en: {
+      projects: "Projects",
+      blog: "Blog",
+      about: "About",
+      contact: "Contact",
+    },
+    tr: {
+      projects: "Projeler",
+      blog: "Blog",
+      about: "Hakkımda",
+      contact: "İletişim",
+    },
+  };
+  const labels = navLabels[lang] ?? navLabels.en;
 
   return (
     <div className="min-h-screen flex flex-col bg-black text-white selection:bg-white selection:text-black">
@@ -28,25 +43,25 @@ export default async function LangLayout({
               href={`/${lang}/projects`}
               className="hover:text-white transition-colors duration-200"
             >
-              Projects
+              {labels.projects}
             </Link>
             <Link
               href={`/${lang}/blog`}
               className="hover:text-white transition-colors duration-200"
             >
-              Blog
+              {labels.blog}
             </Link>
             <Link
               href={`/${lang}/about`}
               className="hover:text-white transition-colors duration-200"
             >
-              About
+              {labels.about}
             </Link>
             <Link
               href={`/${lang}/contact`}
               className="hover:text-white transition-colors duration-200"
             >
-              Contact
+              {labels.contact}
             </Link>
             <Link
               href={`/${oppositeLang}`}
