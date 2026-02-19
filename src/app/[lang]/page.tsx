@@ -13,7 +13,7 @@ export default async function Home({
     <div className="space-y-16">
       <div className="text-center mt-20">
         <h1 className="text-5xl font-bold">
-          {lang === "tr" ? "Furkan Dalyan" : "Furkan Dalyan"}
+          {lang === "tr" ? "Mahir Furkan Dalyan" : "Mahir Furkan Dalyan"}
         </h1>
 
         <p className="mt-6 text-xl text-gray-400">
