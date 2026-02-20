@@ -5,64 +5,54 @@ github: "https://github.com/furkandalyan/Sheet-Sweep.git"
 tags: ["Python", "Desktop", "Data"]
 ---
 
-## 📊 Proje Hakkında
+## Proje Özeti
 
 **Sheet Sweep**, Excel verilerini temizlemek, dönüştürmek ve analiz etmek için geliştirilmiş, Python ve **Tkinter** tabanlı modern bir masaüstü uygulamasıdır. Veri bilimciler ve analistler için tasarlanan bu araç, sütun seçimi, boş satır temizleme, tekrar eden kayıtları kaldırma ve format standardizasyonu gibi işlemleri kolaylaştırır.
 
 Bu proje, veri manipülasyonu (Pandas), GUI tasarımı ve dosya işlemleri konularında pratik yapmak amacıyla geliştirilmiştir.
 
----
+## Teknik Mimari ve Özellikler
 
-## ✨ Öne Çıkan Özellikler
-
-### 🧹 Veri Temizleme
+### Veri Temizleme
 - **Sütun Seçimi:** İstenmeyen sütunları kolayca kaldırabilirsiniz.
 - **Boş Satır Temizleme:** Veri setindeki boş satırları otomatik olarak siler.
 - **Tekrar Eden Kayıtlar:** Aynı veriye sahip satırları (duplicate) tespit eder ve kaldırır.
 
-### 🔄 Veri Dönüştürme
+### Veri Dönüştürme
 - **Sütun Adı Normalizasyonu:** Sütun adlarını standart bir formata (küçük harf, boşluk yerine alt çizgi vb.) dönüştürür.
 - **Format Standardizasyonu:** Tarih ve sayı formatlarını belirli bir standarda getirir.
 
-### 📂 Toplu İşleme ve Dışa Aktarma
+### Toplu İşleme ve Dışa Aktarma
 - **Toplu İşleme:** Bir klasördeki tüm Excel dosyalarını aynı anda işleyebilir.
 - **Çoklu Format Desteği:** Temizlenen verileri Excel, CSV, JSON veya SQLite formatında dışa aktarabilirsiniz.
 
-### 📈 Analiz ve Raporlama
+### Analiz ve Raporlama
 - **Profil Raporu:** Veri setinin özetini (pandas-profiling / sweetviz) HTML raporu olarak oluşturur.
 - **İşlem Logları:** Yapılan tüm işlemler log dosyasına kaydedilir.
 
----
+## Kullanılan Teknolojiler
 
-## 🛠️ Kullanılan Teknolojiler
-
-| Teknoloji | Kullanım Amacı |
+| Teknoloji | Rolü |
 |-----------|----------------|
-| **Python** | Ana programlama dili |
+| **Python 3.x** | Ana geliştirme dili |
 | **Tkinter** | Grafiksel kullanıcı arayüzü (GUI) |
 | **Pandas** | Veri manipülasyonu ve analizi |
 | **OpenPyXL** | Excel dosyalarını okuma ve yazma |
 | **Pandas-Profiling** | Veri profili oluşturma |
 
----
+## Kurulum
 
-## 🚀 Nasıl Çalıştırılır?
+Projeyi yerel ortamda çalıştırmak için:
 
-1.  **Repoyu Klonlayın:**
+1.  Depoyu klonlayın:
     ```bash
     git clone https://github.com/furkandalyan/Sheet-Sweep.git
     ```
-
-2.  **Gerekli Kütüphaneleri Yükleyin:**
+2.  Gerekli bağımlılıkları yükleyin:
     ```bash
     pip install -r requirements.txt
     ```
-
-3.  **Uygulamayı Başlatın:**
+3.  Başlatın:
     ```bash
     python main.py
     ```
-
----
-
-> *"Veri temizliği, veri analizinin %80'idir."*

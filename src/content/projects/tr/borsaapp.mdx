@@ -5,34 +5,30 @@ github: "https://github.com/furkandalyan/BorsaApp.git"
 tags: ["Django", "Finance", "Data Science"]
 ---
 
-## 📈 Proje Hakkında
+## Proje Özeti
 
 **BorsaApp**, Borsa İstanbul (BIST) hisselerini takip etmek ve teknik analiz yapmak isteyen yatırımcılar için geliştirilmiş, **Django** tabanlı bir web platformudur. Kullanıcılar, hisse senetlerinin geçmiş verilerini inceleyebilir, popüler teknik indikatörleri (RSI, MACD, Bollinger Bands) grafik üzerinde görüntüleyebilir.
 
 Bu proje, finansal veri analizi ile web geliştirmeyi birleştirerek, yatırım kararlarını destekleyecek güçlü bir araç sunmayı hedefler.
 
----
+## Teknik Mimari ve Özellikler
 
-## ✨ Öne Çıkan Özellikler
-
-### 📊 Teknik Analiz Araçları
+### Teknik Analiz Araçları
 - **RSI (Relative Strength Index):** Aşırı alım/satım bölgelerini belirlemek için kullanılır.
 - **MACD (Moving Average Convergence Divergence):** Trend dönüşlerini ve momentumu analiz eder.
 - **Bollinger Bands:** Volatiliteyi ve potansiyel fiyat kırılmalarını gösterir.
 
-### 📉 İnteraktif Grafikler
+### İnteraktif Grafikler
 - **Plotly Entegrasyonu:** Kullanıcılar grafik üzerinde yakınlaştırma (zoom), kaydırma (pan) yapabilir ve belirli tarih aralıklarını seçebilir.
 - **Dinamik Veri:** Seçilen hisse senedine göre grafikler ve indikatörler anlık olarak güncellenir.
 
-### ⚙️ Backend Mimarisi
+### Backend Mimarisi
 - **Django Framework:** Güvenli, ölçeklenebilir ve hızlı bir web altyapısı sağlar.
 - **Veri Entegrasyonu:** Finansal veriler API'ler aracılığıyla çekilir ve işlenir.
 
----
+## Kullanılan Teknolojiler
 
-## 🛠️ Kullanılan Teknolojiler
-
-| Teknoloji | Kullanım Amacı |
+| Teknoloji | Rolü |
 |-----------|----------------|
 | **Django** | Web framework ve backend mantığı |
 | **Pandas** | Finansal verilerin işlenmesi ve hesaplanması |
@@ -40,30 +36,23 @@ Bu proje, finansal veri analizi ile web geliştirmeyi birleştirerek, yatırım 
 | **Plotly** | İnteraktif grafiklerin oluşturulması |
 | **HTML/CSS/JS** | Frontend arayüzü |
 
----
+## Kurulum
 
-## 🚀 Nasıl Çalıştırılır?
+Projeyi yerel ortamda çalıştırmak için:
 
-1.  **Repoyu Klonlayın:**
+1.  Depoyu klonlayın:
     ```bash
     git clone https://github.com/furkandalyan/BorsaApp.git
     ```
-
-2.  **Gerekli Kütüphaneleri Yükleyin:**
+2.  Gerekli bağımlılıkları yükleyin:
     ```bash
     pip install -r requirements.txt
     ```
-
-3.  **Veritabanı Migrasyonlarını Yapın:**
+3.  Veritabanı migrasyonlarını yapın:
     ```bash
     python manage.py migrate
     ```
-
-4.  **Sunucuyu Başlatın:**
+4.  Sunucuyu başlatın:
     ```bash
     python manage.py runserver
     ```
-
----
-
-> *"Piyasalar sabırsızlardan sabırlılara para aktaran bir mekanizmadır."*

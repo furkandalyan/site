@@ -5,59 +5,49 @@ github: "https://github.com/furkandalyan/AESLocker-.git"
 tags: ["Python", "Security", "Desktop"]
 ---
 
-## 🔒 Proje Hakkında
+## Proje Özeti
 
 **AES Locker**, kullanıcıların hassas verilerini (dosya ve klasörler) güvenli bir şekilde şifrelemesini sağlayan, Python ve **Tkinter** tabanlı modern bir masaüstü uygulamasıdır. AES-256 algoritması kullanılarak geliştirilen bu proje, sürükle-bırak arayüzü ve opsiyonel RSA hibrit şifreleme desteği ile hem güvenlik hem de kullanım kolaylığı sunar.
 
 Bu proje, kriptografi temelleri, dosya sistemi işlemleri ve GUI tasarımı konularında pratik yapmak amacıyla geliştirilmiştir.
 
----
+## Teknik Mimari ve Özellikler
 
-## ✨ Öne Çıkan Özellikler
-
-### 🛡️ Güçlü Şifreleme
+### Güçlü Şifreleme
 - **AES-256:** Endüstri standardı AES-256 algoritması kullanılarak verileriniz kırılması imkansız hale getirilir.
 - **RSA Hibrit Şifreleme:** Opsiyonel olarak RSA anahtar çifti kullanılarak şifreleme anahtarı da şifrelenir, böylece ekstra bir güvenlik katmanı sağlanır.
 
-### 🔑 Anahtar Yönetimi
+### Anahtar Yönetimi
 - **Anahtar Dosyası (.keyinfo):** Şifreleme anahtarı ayrı bir dosyada saklanabilir veya şifrelenmiş dosyanın içine gömülebilir (.aesf).
 - **Geçerlilik Süresi:** Anahtarların belirli bir süre sonra otomatik olarak geçersiz hale gelmesi sağlanabilir.
 
-### 🎨 Kullanıcı Dostu Arayüz
+### Kullanıcı Dostu Arayüz
 - **Sürükle-Bırak:** Dosya ve klasörleri sürükleyip bırakarak kolayca şifreleyebilirsiniz.
 - **Çoklu Dil Desteği:** Türkçe ve İngilizce dil seçenekleri sunar.
 - **Loglama:** Yapılan tüm işlemler (şifreleme, çözme, hata vb.) log dosyasına kaydedilir.
 
----
+## Kullanılan Teknolojiler
 
-## 🛠️ Kullanılan Teknolojiler
-
-| Teknoloji | Kullanım Amacı |
+| Teknoloji | Rolü |
 |-----------|----------------|
-| **Python** | Ana programlama dili |
+| **Python 3.x** | Ana geliştirme dili |
 | **Tkinter** | Grafiksel kullanıcı arayüzü (GUI) |
 | **PyCryptodome** | Kriptografik işlemler (AES, RSA) |
 | **OS / Sys** | Dosya sistemi yönetimi |
 
----
+## Kurulum
 
-## 🚀 Nasıl Çalıştırılır?
+Projeyi yerel ortamda çalıştırmak için:
 
-1.  **Repoyu Klonlayın:**
+1.  Depoyu klonlayın:
     ```bash
     git clone https://github.com/furkandalyan/AESLocker-.git
     ```
-
-2.  **Gerekli Kütüphaneleri Yükleyin:**
+2.  Gerekli bağımlılığı yükleyin:
     ```bash
     pip install pycryptodome
     ```
-
-3.  **Uygulamayı Başlatın:**
+3.  Başlatın:
     ```bash
     python main.py
     ```
-
----
-
-> *"Güvenlik bir ürün değil, bir süreçtir."*

@@ -1,52 +1,43 @@
 ﻿---
 title: "Perfect Timer Game"
-summary: "Python ve Tkinter ile geliştirilmiş, milisaniye hassasiyetinde refleks ve zamanlama oyunu."
+summary: "Python ve Tkinter ile geliştirilmiş, milisaniye hassasiyetinde zamanlama ve refleks ölçüm simülasyonu."
 github: "https://github.com/furkandalyan/Perfect-Timer-Game.git"
-tags: ["Python", "Tkinter", "Game Dev"]
+tags: ["Python", "Tkinter", "Simulation"]
 ---
 
-## 🎮 Proje Hakkında
+## Proje Özeti
 
-**Perfect Timer Game**, oyuncunun reflekslerini ve zamanlama yeteneğini test eden minimalist bir oyundur. Python'un **Tkinter** kütüphanesi kullanılarak geliştirilen bu projede amaç basittir: Belirlenen hedef süreye (örneğin 5.000 saniye) mümkün olduğunca yakın bir anda kronometreyi durdurmak.
+**Perfect Timer Game**, kullanıcıların zaman algısını ve refleks hızını milisaniye düzeyinde test eden bir simülasyon aracıdır. Python'un **Tkinter** kütüphanesi kullanılarak geliştirilen bu proje, olay tabanlı (event-driven) programlama mimarisi üzerine inşa edilmiştir. Temel amaç, belirlenen bir hedef süreye (örneğin 5.000 saniye) mümkün olan en yakın anda kronometreyi durdurmaktır.
 
-Bu proje, GUI programlama, olay tabanlı (event-driven) mimari ve hassas zaman yönetimi konularında pratik yapmak amacıyla geliştirilmiştir.
+## Teknik Mimari ve Özellikler
 
----
+### Hassas Zaman Yönetimi
+Oyunun çekirdeğinde, Python'un `time` modülü kullanılarak geliştirilmiş yüksek hassasiyetli bir sayaç mekanizması bulunur. Bu mekanizma, sistem saatini referans alarak milisaniye düzeyinde sapmaları hesaplar ve kullanıcıya anlık geri bildirim sağlar.
 
-## ✨ Öne Çıkan Özellikler
+### Olay Tabanlı GUI Tasarımı
+Kullanıcı arayüzü, Tkinter'in olay döngüsü (mainloop) ile entegre çalışacak şekilde tasarlanmıştır. Buton tıklamaları ve zamanlayıcı güncellemeleri, ana iş parçacığını (main thread) bloke etmeden asenkron bir yapıda işlenir.
 
-### ⏱️ Hassas Zamanlama
-- **Milisaniye Doğruluğu:** Oyun, Python'un `time` modülünü kullanarak milisaniye hassasiyetinde ölçüm yapar.
-- **Anlık Geri Bildirim:** Durdurduğunuz an ile hedef süre arasındaki fark (örneğin +0.012 sn) anında ekranda gösterilir.
+### Dinamik Zorluk ve Skorlama
+- **Hedef Süre Seçimi:** Kullanıcı, farklı zorluk seviyelerine göre hedef süreleri dinamik olarak belirleyebilir.
+- **Hata Payı Hesaplama:** Durdurma anı ile hedef süre arasındaki fark, mutlak değer üzerinden hesaplanarak skorlama algoritmasına dahil edilir.
 
-### 🎯 Oyun Mekanikleri
-- **Hedef Süre Belirleme:** Oyuncu, zorluk seviyesine göre farklı hedef süreler seçebilir.
-- **Skor Sistemi:** Hedefe ne kadar yakın durdurursanız o kadar yüksek puan alırsınız. Tam isabet (0.000 fark) "Perfect" bonusu kazandırır.
+## Kullanılan Teknolojiler
 
----
-
-## 🛠️ Kullanılan Teknolojiler
-
-| Teknoloji | Kullanım Amacı |
+| Teknoloji | Rolü |
 |-----------|----------------|
-| **Python** | Ana programlama dili |
-| **Tkinter** | Grafiksel kullanıcı arayüzü (GUI) |
-| **Time** | Hassas zaman ölçümü ve sayaç mantığı |
+| **Python 3.x** | Çekirdek mantık ve uygulama çatısı |
+| **Tkinter** | Grafiksel kullanıcı arayüzü (GUI) ve olay yönetimi |
+| **Time Modülü** | Yüksek hassasiyetli zaman ölçümü |
 
----
+## Kurulum
 
-## 🚀 Nasıl Çalıştırılır?
+Projeyi yerel ortamda çalıştırmak için:
 
-1.  **Repoyu Klonlayın:**
+1.  Depoyu klonlayın:
     ```bash
     git clone https://github.com/furkandalyan/Perfect-Timer-Game.git
     ```
-
-2.  **Oyunu Başlatın:**
+2.  Başlatın:
     ```bash
     python main.py
     ```
-
----
-
-> *"Zamanlama her şeydir. Bir milisaniye bile fark yaratır."*

@@ -1,62 +1,49 @@
 ﻿---
 title: "Flappy Bird Game"
-summary: "Pygame ile geliştirilmiş, özel tasarım assetler ve akıcı mekaniklere sahip modern bir Flappy Bird klonu."
+summary: "Pygame kütüphanesi kullanılarak geliştirilmiş, optimize edilmiş fizik motoruna ve özel varlık yönetimine sahip 2D oyun simülasyonu."
 github: "https://github.com/furkandalyan/Flappy-Bird.git"
-tags: ["Python", "Pygame", "Game Dev"]
+tags: ["Python", "Pygame", "Simulation"]
 ---
 
-## 🎮 Proje Hakkında
+## Proje Özeti
 
-Bu proje, efsanevi **Flappy Bird** oyununun Python ve **Pygame** kütüphanesi kullanılarak sıfırdan geliştirilmiş modern bir versiyonudur. Sadece bir klon olmanın ötesinde, oyun mekaniklerini en akıcı hale getirmek ve görsel deneyimi iyileştirmek için özel tasarım assetler kullanılmıştır.
+Bu çalışma, klasik Flappy Bird mekaniklerinin Python ekosistemi içerisinde yeniden inşa edilmesini ve optimize edilmesini hedefler. Proje, standart bir oyun kopyası olmanın ötesinde, **nesne yönelimli programlama (OOP)** prensipleriyle tasarlanmış modüler bir yapıya sahiptir. Oyun döngüsü (Game Loop), kare hızı (FPS) stabilizasyonu ve varlık (asset) yönetimi konularında endüstriyel standartlara yakın bir yaklaşım benimsenmiştir.
 
-Oyun geliştirme mantığını, fizik motoru simülasyonunu (yerçekimi, çarpışma testleri) ve asset yönetimini öğrenmek amacıyla geliştirdiğim bu proje, temiz kod yapısı ve genişletilebilir mimarisiyle dikkat çeker.
+## Teknik Mimari ve Özellikler
 
----
+### Fizik Motoru ve Çarpışma Algılama
+Oyunun en kritik bileşeni olan çarpışma testleri (Collision Detection), basit geometrik hesaplamalar yerine **piksel tabanlı maskeleme (Pixel-Perfect Masking)** yöntemiyle gerçekleştirilmiştir. Bu yaklaşım, görsel sınırlarla fiziksel sınırların birebir örtüşmesini sağlayarak oyun deneyimindeki tutarsızlıkları ortadan kaldırır. Yerçekimi ivmesi ve hız vektörleri, gerçekçi bir uçuş mekaniği simüle edecek şekilde matematiksel olarak modellenmiştir.
 
-## ✨ Öne Çıkan Özellikler
+### Varlık Yönetimi ve Render Optimizasyonu
+- **Dinamik Sprite İşleme:** Oyun içi varlıklar (kuş, borular, zemin), bellek yönetimi gözetilerek yüklenir ve işlenir.
+- **Özel Grafik Tasarımı:** Standart kütüphane görselleri yerine, projenin atmosferine özgü tasarlanmış grafikler kullanılmıştır.
+- **Skor Sistemi:** Sayısal veriler, sistem fontları yerine özel olarak haritalanmış görsel setleri üzerinden render edilir.
 
-### 🎨 Özel Tasarım & Görsellik
-Standart oyun assetleri yerine, oyunun atmosferine uygun **özel tasarım grafikler** kullanıldı.
-- **PNG Tabanlı Skor Sistemi:** Skorlar standart fontlar yerine, oyunun sanat tarzıyla uyumlu özel PNG görselleriyle dinamik olarak oluşturulur.
-- **Akıcı Animasyonlar:** Kuşun kanat çırpma hareketleri ve zemin kayma efektleri, kare kare (frame-by-frame) işlenerek pürüzsüz bir görüntü sağlar.
+### Veri Kalıcılığı
+Kullanıcı skorları, yerel dosya sisteminde güvenli bir I/O yapısı ile saklanır. Bu yapı, oyunun kapatılıp açılması durumunda veri bütünlüğünü korur ve en yüksek skor takibini mümkün kılar.
 
-### ⚙️ Teknik Detaylar & Mekanikler
-- **Kalıcı Skor Sistemi (High Score):** Oyuncunun en yüksek skoru yerel dosyada şifreli bir şekilde saklanır, böylece oyun kapatılsa bile rekor kaybolmaz.
-- **Hassas Çarpışma (Collision Detection):** Pygame'in `mask` modülü kullanılarak piksel hassasiyetinde çarpışma testleri yapıldı. Bu sayede "havaya değdim ama yandım" sorunu ortadan kaldırıldı.
-- **Optimize Edilmiş Döngü:** Oyun döngüsü (Game Loop), sabit 60 FPS verecek şekilde optimize edildi, böylece her bilgisayarda aynı hızda çalışır.
+## Kullanılan Teknolojiler
 
----
-
-## 🛠️ Kullanılan Teknolojiler
-
-| Teknoloji | Kullanım Amacı |
+| Teknoloji | Rolü |
 |-----------|----------------|
-| **Python** | Ana programlama dili |
-| **Pygame** | Oyun motoru, grafik işleme ve ses yönetimi |
-| **OS / Sys** | Dosya sistemi yönetimi (skor kaydı vb.) |
-| **Random** | Boruların rastgele konumlarda oluşturulması |
+| **Python 3.x** | Çekirdek mantık ve uygulama çatısı |
+| **Pygame** | Grafik render motoru, ses işleme ve giriş (input) yönetimi |
+| **Math Modülü** | Fizik hesaplamaları ve vektör işlemleri |
+| **OS/Sys** | Dosya sistemi yönetimi ve kaynak yolu çözümleme |
 
----
+## Kurulum
 
-## 🚀 Nasıl Çalıştırılır?
+Projeyi yerel ortamda çalıştırmak için:
 
-Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyebilirsiniz:
-
-1.  **Repoyu Klonlayın:**
+1.  Depoyu klonlayın:
     ```bash
     git clone https://github.com/furkandalyan/Flappy-Bird.git
     ```
-
-2.  **Gerekli Kütüphaneleri Yükleyin:**
+2.  Gerekli bağımlılığı yükleyin:
     ```bash
     pip install pygame
     ```
-
-3.  **Oyunu Başlatın:**
+3.  Başlatın:
     ```bash
     python main.py
     ```
-
----
-
-> *"Oyun geliştirmek, sadece kod yazmak değil; bir dünya yaratmak ve kurallarını belirlemektir."*
