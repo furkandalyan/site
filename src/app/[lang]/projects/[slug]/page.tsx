@@ -72,22 +72,15 @@ export default async function ProjectDetail({
         )}
       </header>
 
-      <article className="prose prose-invert prose-lg max-w-none 
-        prose-headings:font-bold prose-headings:tracking-tight prose-headings:text-white
-        prose-h2:text-2xl prose-h2:mt-16 prose-h2:mb-6 prose-h2:border-b prose-h2:border-white/10 prose-h2:pb-4
-        prose-h3:text-xl prose-h3:mt-10 prose-h3:mb-4 prose-h3:text-white/90
-        prose-p:text-white/70 prose-p:leading-relaxed prose-p:mb-6
-        prose-a:text-white prose-a:underline prose-a:decoration-white/30 prose-a:underline-offset-4 hover:prose-a:decoration-white/80 hover:prose-a:text-white prose-a:transition-all
-        prose-strong:text-white prose-strong:font-semibold
-        prose-code:text-white/90 prose-code:bg-white/10 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md prose-code:font-normal prose-code:before:content-none prose-code:after:content-none
-        prose-pre:bg-[#0a0a0a] prose-pre:border prose-pre:border-white/10 prose-pre:rounded-2xl prose-pre:p-6 prose-pre:shadow-2xl prose-pre:my-8
-        prose-img:rounded-2xl prose-img:shadow-2xl prose-img:border prose-img:border-white/10 prose-img:my-12 prose-img:w-full
-        prose-li:text-white/70 prose-li:marker:text-white/30 prose-li:my-2
-        prose-ul:my-6 prose-ol:my-6
-        prose-blockquote:border-l-4 prose-blockquote:border-white/20 prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-white/60 prose-blockquote:my-10 prose-blockquote:bg-white/5 prose-blockquote:py-4 prose-blockquote:pr-4 prose-blockquote:rounded-r-xl
-        prose-hr:border-white/10 prose-hr:my-16">
-        {content}
-      </article>
+      <div className="relative mt-6">
+        <div
+          className="absolute -inset-2 md:-inset-4 rounded-3xl bg-gradient-to-b from-white/[0.06] via-white/[0.02] to-transparent blur-2xl opacity-70 pointer-events-none"
+          aria-hidden="true"
+        ></div>
+        <article className="project-content relative max-w-none rounded-3xl border border-white/10 bg-white/[0.03] px-6 py-10 md:px-10 md:py-12 shadow-2xl shadow-black/30 backdrop-blur-sm">
+          {content}
+        </article>
+      </div>
     </div>
   );
 }

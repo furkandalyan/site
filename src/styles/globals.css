@@ -24,3 +24,125 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.project-content {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 1.0625rem;
+  line-height: 1.85;
+}
+
+.project-content h2 {
+  margin: 3.5rem 0 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+
+.project-content h3 {
+  margin: 2.25rem 0 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.project-content p {
+  margin: 0 0 1.4rem;
+}
+
+.project-content a {
+  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.3);
+  text-underline-offset: 4px;
+  transition: text-decoration-color 0.2s ease, color 0.2s ease;
+}
+
+.project-content a:hover {
+  text-decoration-color: rgba(255, 255, 255, 0.8);
+  color: #ffffff;
+}
+
+.project-content strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.project-content ul,
+.project-content ol {
+  margin: 1.25rem 0;
+  padding-left: 1.5rem;
+}
+
+.project-content li {
+  margin: 0.4rem 0;
+}
+
+.project-content code {
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.375rem;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.95em;
+}
+
+.project-content pre {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #0a0a0a;
+  overflow-x: auto;
+}
+
+.project-content pre code {
+  padding: 0;
+  background: transparent;
+}
+
+.project-content blockquote {
+  margin: 2rem 0;
+  padding: 0.75rem 1rem;
+  border-left: 4px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0 0.75rem 0.75rem 0;
+  background: rgba(255, 255, 255, 0.05);
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.project-content table {
+  width: 100%;
+  margin: 2rem 0;
+  border-collapse: collapse;
+}
+
+.project-content th,
+.project-content td {
+  padding: 0.75rem 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-content th {
+  text-align: left;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.project-content td {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.project-content img {
+  width: 100%;
+  margin: 2.5rem 0;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+}
+
+.project-content hr {
+  margin: 3rem 0;
+  border-color: rgba(255, 255, 255, 0.1);
+}
