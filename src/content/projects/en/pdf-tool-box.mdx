@@ -1,4 +1,4 @@
-﻿---
+---
 title: "PDF TOOL BOX"
 summary: "Modern PDF desktop app with a dark UI."
 github: "https://github.com/furkandalyan/PDF-TOOL-BOX.git"
@@ -18,5 +18,24 @@ Features:
 - OCR text extraction
 - Metadata editing
 - Undo/redo
+
+## Tech Stack
+- Python 3.x
+- Tkinter (GUI)
+- PyPDF2
+- Tesseract OCR
+
+## Technical Architecture
+`UI -> PDF Engine -> OCR/Metadata -> File System`
+
+## Challenges & Lessons Learned
+- Performance and memory on large PDFs
+- OCR accuracy and language settings
+- Metadata integrity and file safety
+
+## Testing / Logging / Monitoring
+- Tests: Manual checks on different PDF types
+- Logging: Operation logs and error records
+- Monitoring: Local app, no monitoring required
 
 GitHub: https://github.com/furkandalyan/PDF-TOOL-BOX.git

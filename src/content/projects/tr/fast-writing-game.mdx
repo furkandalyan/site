@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Fast Writing Game"
 summary: "Python ve Tkinter ile geliştirilmiş, yazma hızını ve doğruluğunu ölçen modern bir yazma pratiği uygulaması."
 github: "https://github.com/furkandalyan/FastWriting-Game.git"
@@ -32,6 +32,25 @@ Bu proje, GUI programlama, olay tabanlı (event-driven) mimari ve gerçek zamanl
 | **Tkinter** | Grafiksel kullanıcı arayüzü (GUI) |
 | **Time** | Süre ölçümü ve zamanlayıcı |
 | **Random** | Rastgele cümle seçimi |
+
+## Tech Stack
+- Python 3.x
+- Tkinter (GUI)
+- Time
+- Random
+
+## Technical Architecture
+`UI -> Input Handler -> Typing Engine -> Metrics/Scoring -> Local Storage`
+
+## Challenges & Lessons Learned
+- Gercek zamanli karakter dogrulama ve gorsel geri bildirim
+- WPM hesaplamasinda dogruluk ve adalet
+- UI akiciligi (event loop) ve gecikme yonetimi
+
+## Testing / Logging / Monitoring
+- Tests: Manuel senaryolar (kisa/uzun metin, farkli hizlar)
+- Logging: Basit skor/oturum kayitlari
+- Monitoring: Yerel uygulama, izleme gerektirmez
 
 ## Kurulum
 

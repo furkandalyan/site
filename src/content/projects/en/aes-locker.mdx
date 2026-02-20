@@ -1,4 +1,4 @@
-﻿---
+---
 title: "AES Locker"
 summary: "User-friendly file and folder encryption tool."
 github: "https://github.com/furkandalyan/AESLocker-.git"
@@ -20,5 +20,24 @@ Features:
 - TR/EN UI
 - RSA key pair generation
 - Logging
+
+## Tech Stack
+- Python 3.x
+- Tkinter (GUI)
+- PyCryptodome (AES/RSA)
+- OS / Sys (file operations)
+
+## Technical Architecture
+`UI -> Encryption Orchestrator -> Crypto Engine (AES/RSA) -> File System`
+
+## Challenges & Lessons Learned
+- Key management and secure key file format design
+- Performance and recovery flow for large files
+- Clean UX for a security-heavy workflow
+
+## Testing / Logging / Monitoring
+- Tests: Manual scenarios (encrypt/decrypt, wrong key); automation planned
+- Logging: Operation logs (encrypt/decrypt/error)
+- Monitoring: Local app, no monitoring required
 
 GitHub: https://github.com/furkandalyan/AESLocker-.git

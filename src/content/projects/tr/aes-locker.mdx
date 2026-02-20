@@ -1,4 +1,4 @@
-﻿---
+---
 title: "AES Locker"
 summary: "Python ve Tkinter ile geliştirilmiş, AES-256 şifreleme kullanan modern bir dosya ve klasör şifreleme aracı."
 github: "https://github.com/furkandalyan/AESLocker-.git"
@@ -34,6 +34,26 @@ Bu proje, kriptografi temelleri, dosya sistemi işlemleri ve GUI tasarımı konu
 | **Tkinter** | Grafiksel kullanıcı arayüzü (GUI) |
 | **PyCryptodome** | Kriptografik işlemler (AES, RSA) |
 | **OS / Sys** | Dosya sistemi yönetimi |
+
+## Tech Stack
+- Python 3.x
+- Tkinter (GUI)
+- PyCryptodome (AES/RSA)
+- OS / Sys (dosya islemleri)
+
+## Technical Architecture
+Masaustu arayuz uzerinden islem akisi, sifreleme orkestrasyonu ve dosya sistemi uzerine kuruludur.
+`UI -> Encryption Orchestrator -> Crypto Engine (AES/RSA) -> File System`
+
+## Challenges & Lessons Learned
+- Anahtar yonetimi ve anahtar dosyasi formatinin guvenli tasarimi
+- Buyuk dosyalarda performans ve hata kurtarma akislari
+- Kullanici hatalarini azaltan akici bir UX
+
+## Testing / Logging / Monitoring
+- Tests: Manuel senaryolar (sifrele/coz, hatali anahtar); otomasyon planlaniyor
+- Logging: Islem loglari (sifreleme/cozme/hata)
+- Monitoring: Yerel uygulama, izleme gerektirmez
 
 ## Kurulum
 

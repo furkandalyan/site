@@ -1,4 +1,4 @@
-﻿---
+---
 title: "PDF TOOL BOX"
 summary: "Python ve Tkinter ile geliştirilmiş, PDF dosyalarını yönetmek ve düzenlemek için modern bir masaüstü uygulaması."
 github: "https://github.com/furkandalyan/PDF-TOOL-BOX.git"
@@ -40,6 +40,25 @@ Bu proje, dosya işlemleri, GUI tasarımı ve harici kütüphanelerin (PyPDF2, T
 | **PyPDF2** | PDF işlemleri (birleştirme, bölme, şifreleme) |
 | **Tesseract OCR** | Görüntüden metin çıkarma |
 | **Pillow (PIL)** | Görüntü işleme |
+
+## Tech Stack
+- Python 3.x
+- Tkinter (GUI)
+- PyPDF2
+- Tesseract OCR
+
+## Technical Architecture
+`UI -> PDF Engine -> OCR/Metadata -> File System`
+
+## Challenges & Lessons Learned
+- Buyuk PDF dosyalarinda performans ve bellek yonetimi
+- OCR dogrulugu ve dil ayarlari
+- Metadata koruma ve dosya butunlugu
+
+## Testing / Logging / Monitoring
+- Tests: Farkli PDF tipleriyle manuel kontroller
+- Logging: Islem loglari ve hata kayitlari
+- Monitoring: Yerel uygulama, izleme gerektirmez
 
 ## Kurulum
 

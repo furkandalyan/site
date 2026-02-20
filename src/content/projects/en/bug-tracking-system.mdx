@@ -1,4 +1,4 @@
-﻿---
+---
 title: "BugTrackingSystem"
 summary: "Django-based bug tracking system for teams."
 github: "https://github.com/furkandalyan/BugTrackingSystem.git"
@@ -16,5 +16,23 @@ Features:
 - Create / update bug reports
 - Listing and detail pages
 - Modular bugs app
+
+## Tech Stack
+- Django
+- Django ORM
+- HTML/CSS
+
+## Technical Architecture
+`Client -> Django Views -> Issue Workflow Service -> DB`
+
+## Challenges & Lessons Learned
+- Role-based permissions and view separation
+- Clean lifecycle states (open/assigned/resolved)
+- Search, filtering, and reporting flows
+
+## Testing / Logging / Monitoring
+- Tests: Manual access-control and workflow checks; automation planned
+- Logging: Django request/error logs
+- Monitoring: Hosting metrics (optional)
 
 GitHub: https://github.com/furkandalyan/BugTrackingSystem.git

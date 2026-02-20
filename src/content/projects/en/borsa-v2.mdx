@@ -1,4 +1,4 @@
-﻿---
+---
 title: "borsa-v2"
 summary: "Django-based stock and finance analytics app."
 github: "https://github.com/furkandalyan/borsa-v2.git"
@@ -17,5 +17,25 @@ Features:
 - BIST symbol helpers
 - Analysis, comparison, commodities, forecast, portfolio pages
 - Watchlists and alerts
+
+## Tech Stack
+- Django
+- yfinance
+- Plotly
+- HTML/CSS
+
+## Technical Architecture
+`Client -> Django Views -> Data Fetcher (yfinance) -> Indicator Engine -> Plotly Charts -> UI`
+Watchlists and alerts sit on the data layer.
+
+## Challenges & Lessons Learned
+- Data consistency and rate-limit handling
+- Accuracy vs performance for indicators
+- Chart performance and usability
+
+## Testing / Logging / Monitoring
+- Tests: Manual smoke tests for core flows; automation planned
+- Logging: Django request and error logs
+- Monitoring: Hosting metrics (optional)
 
 GitHub: https://github.com/furkandalyan/borsa-v2.git

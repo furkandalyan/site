@@ -1,45 +1,128 @@
-﻿---
-title: "Tic-Tac-Toe"
-summary: "Python ile geliştirilmiş, hem CLI hem de GUI arayüzü sunan, çoklu oyuncu ve AI modlarına sahip Tic-Tac-Toe oyunu."
-github: "https://github.com/furkandalyan/Tic-Tac-Toe.git"
-tags: ["Python", "Tkinter", "Game Development"]
 ---
+
+title: "Tic-Tac-Toe"
+
+summary: "Python ile geliştirilmiş, hem CLI hem de GUI arayüzü sunan, çoklu oyuncu ve AI modlarına sahip Tic-Tac-Toe oyunu."
+
+github: "https://github.com/furkandalyan/Tic-Tac-Toe.git"
+
+tags: ["Python", "Tkinter", "Game Development"]
+
+---
+
+
 
 ## Proje Özeti
 
+
+
 **Tic-Tac-Toe**, klasik XOX oyununun Python ile geliştirilmiş, hem komut satırı (CLI) hem de grafiksel kullanıcı arayüzü (GUI) sunan kapsamlı bir versiyonudur. Bu proje, oyun mantığını, yapay zeka (AI) algoritmalarını ve farklı arayüz tasarımlarını öğrenmek amacıyla geliştirilmiştir.
+
+
 
 ## Teknik Mimari ve Özellikler
 
+
+
 ### Oyun Modları
+
 - **Çoklu Oyuncu (Multiplayer):** Arkadaşınızla aynı bilgisayarda oynayabilirsiniz.
+
 - **Yapay Zeka (AI):** Bilgisayara karşı oynayarak stratejinizi test edebilirsiniz.
 
+
+
 ### Esnek Arayüz
+
 - **CLI (Komut Satırı):** Minimalist bir deneyim için terminal üzerinden oynanabilir.
+
 - **GUI (Tkinter):** Modern bir arayüz, tema değiştirme seçenekleri ve tam ekran modu sunar.
 
+
+
 ### Veri Yönetimi
+
 - **CSV Dışa Aktarma:** Oyun sonuçlarını (kazanan, hamle sayısı vb.) CSV formatında kaydederek analiz edebilirsiniz.
+
+
 
 ## Kullanılan Teknolojiler
 
+
+
 | Teknoloji | Rolü |
+
 |-----------|----------------|
+
 | **Python 3.x** | Ana geliştirme dili |
+
 | **Tkinter** | Grafiksel kullanıcı arayüzü (GUI) |
+
 | **CSV** | Oyun verilerinin kaydedilmesi |
+
 | **Random** | AI hamlelerinin belirlenmesi |
+
+
+
+## Tech Stack
+
+- Python 3.x
+
+- Tkinter (GUI)
+
+- CLI
+
+- CSV
+
+
+
+## Technical Architecture
+
+`CLI/GUI -> Game Engine -> AI Decision -> Result Storage (CSV)`
+
+
+
+## Challenges & Lessons Learned
+
+- AI stratejisini dengeli hale getirmek
+
+- CLI ve GUI deneyimini tutarli tutmak
+
+- Oyun durumunu hatasiz yonetmek
+
+
+
+## Testing / Logging / Monitoring
+
+- Tests: Manuel oyun senaryolari (farkli zorluklar)
+
+- Logging: Mac ve skor kayitlari
+
+- Monitoring: Yerel uygulama, izleme gerektirmez
+
+
 
 ## Kurulum
 
+
+
 Projeyi yerel ortamda çalıştırmak için:
 
+
+
 1.  Depoyu klonlayın:
+
     ```bash
+
     git clone https://github.com/furkandalyan/Tic-Tac-Toe.git
+
     ```
+
 2.  Başlatın:
+
     ```bash
+
     python main.py
+
     ```
+

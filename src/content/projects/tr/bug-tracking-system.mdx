@@ -1,4 +1,4 @@
-﻿---
+---
 title: "BugTrackingSystem"
 summary: "Django tabanli bug tracking sistemi."
 github: "https://github.com/furkandalyan/BugTrackingSystem.git"
@@ -18,3 +18,22 @@ Ozellikler:
 - Moduler mimari (bugs app)
 
 GitHub: https://github.com/furkandalyan/BugTrackingSystem.git
+
+## Tech Stack
+- Django
+- Django ORM
+- HTML/CSS
+
+## Technical Architecture
+`Client -> Django Views -> Issue Workflow Service -> DB`
+
+## Challenges & Lessons Learned
+- Rol bazli yetkilendirme ve gorunum ayrimi
+- Hata yasam dongusunun (acik/atanmis/cozuldu) net tasarimi
+- Arama, filtreleme ve raporlama akislari
+
+## Testing / Logging / Monitoring
+- Tests: Yetki ve akislarda manuel kontroller; otomasyon planlaniyor
+- Logging: Django istek/hata loglari
+- Monitoring: Hosting metrikleri (opsiyonel)
+

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "QR Code Generator And Scanner"
 summary: "Generate and scan QR codes with a simple GUI."
 github: "https://github.com/furkandalyan/QR-Code-Generator-Scanner.git"
@@ -17,5 +17,25 @@ Features:
 - Scan from image
 - Real-time webcam scanning
 - Copy to clipboard
+
+## Tech Stack
+- Python 3.x
+- Tkinter (GUI)
+- qrcode
+- OpenCV
+- pyzbar
+
+## Technical Architecture
+`UI -> QR Generator/Scanner -> Image/Camera I/O -> Output`
+
+## Challenges & Lessons Learned
+- Reliable scanning in varied lighting
+- Error-tolerant decode flow
+- Export quality and file sizes
+
+## Testing / Logging / Monitoring
+- Tests: Manual tests with multiple QR samples
+- Logging: Basic operation/error logs
+- Monitoring: Local app, no monitoring required
 
 GitHub: https://github.com/furkandalyan/QR-Code-Generator-Scanner.git

@@ -1,51 +1,138 @@
-﻿---
-title: "Snake Game"
-summary: "Python ve Pygame ile geliştirilmiş, optimize edilmiş oyun döngüsüne ve modern arayüze sahip klasik Snake oyunu."
-github: "https://github.com/furkandalyan/Snake-Game.git"
-tags: ["Python", "Pygame", "Simulation"]
 ---
+
+title: "Snake Game"
+
+summary: "Python ve Pygame ile geliştirilmiş, optimize edilmiş oyun döngüsüne ve modern arayüze sahip klasik Snake oyunu."
+
+github: "https://github.com/furkandalyan/Snake-Game.git"
+
+tags: ["Python", "Pygame", "Simulation"]
+
+---
+
+
 
 ## Proje Özeti
 
+
+
 **Snake Game**, klasik yılan oyununun modern bir yorumudur. Python ve **Pygame** kütüphanesi kullanılarak geliştirilen bu proje, nostaljik oynanışı akıcı hareketler, sade bir arayüz ve genişletilebilir bir kod yapısıyla sunar.
+
+
 
 Oyun geliştirme temellerini, nesne yönelimli programlama (OOP) ile oyun nesnelerinin yönetimini ve çarpışma algılama (collision detection) mantığını pekiştirmek amacıyla tasarlanmıştır.
 
+
+
 ## Teknik Mimari ve Özellikler
 
+
+
 ### Modern Oynanış
+
 - **Akıcı Hareket:** Yılanın hareketi kare kare (frame-by-frame) optimize edilerek takılma olmadan pürüzsüz bir deneyim sağlar.
+
 - **Dinamik Zorluk:** Yılan büyüdükçe oyun hızı kademeli olarak artar, böylece oyunun heyecanı korunur.
 
+
+
 ### Temiz ve Sade UI
+
 - **Minimalist Tasarım:** Göz yormayan renk paleti ve sade arayüz elemanları kullanıldı.
+
 - **Anlık Skor Takibi:** Mevcut skor ve en yüksek skor (High Score) ekranın köşesinde sürekli güncellenir.
 
+
+
 ### Teknik Detaylar
+
 - **Genişletilebilir Kod Yapısı:** Oyun mantığı modüler bir şekilde yazıldı (Yılan sınıfı, Yem sınıfı, Oyun Döngüsü sınıfı), böylece yeni özellikler kolayca eklenebilir.
+
 - **Çarpışma Algılama:** Yılanın kendi kuyruğuna veya duvarlara çarpması hassas bir şekilde kontrol edilir.
+
+
 
 ## Kullanılan Teknolojiler
 
+
+
 | Teknoloji | Rolü |
+
 |-----------|----------------|
+
 | **Python 3.x** | Ana geliştirme dili |
+
 | **Pygame** | Oyun motoru, grafik çizimi ve olay yönetimi |
+
 | **Random** | Yemlerin rastgele konumlarda oluşturulması |
+
+
+
+## Tech Stack
+
+- Python 3.x
+
+- Pygame
+
+- Random
+
+
+
+## Technical Architecture
+
+`Input -> Game Loop -> Movement/Collision -> Renderer -> Score`
+
+
+
+## Challenges & Lessons Learned
+
+- Akici hareket ve sabit hiz
+
+- Carpisma algilama dogrulugu
+
+- Zorluk seviyesini dengeli artirmak
+
+
+
+## Testing / Logging / Monitoring
+
+- Tests: Manuel oyun testleri
+
+- Logging: Debug loglari (opsiyonel)
+
+- Monitoring: Yerel uygulama, izleme gerektirmez
+
+
 
 ## Kurulum
 
+
+
 Projeyi yerel ortamda çalıştırmak için:
 
+
+
 1.  Depoyu klonlayın:
+
     ```bash
+
     git clone https://github.com/furkandalyan/Snake-Game.git
+
     ```
+
 2.  Gerekli bağımlılığı yükleyin:
+
     ```bash
+
     pip install pygame
+
     ```
+
 3.  Başlatın:
+
     ```bash
+
     python main.py
+
     ```
+

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "BorsaApp"
 summary: "Django tabanlı, Türk hisseleri için teknik analiz ve görselleştirme platformu."
 github: "https://github.com/furkandalyan/BorsaApp.git"
@@ -35,6 +35,26 @@ Bu proje, finansal veri analizi ile web geliştirmeyi birleştirerek, yatırım 
 | **TA-Lib** | Teknik analiz indikatörlerinin hesaplanması |
 | **Plotly** | İnteraktif grafiklerin oluşturulması |
 | **HTML/CSS/JS** | Frontend arayüzü |
+
+## Tech Stack
+- Django
+- Pandas
+- TA-Lib
+- Plotly
+- HTML/CSS/JS
+
+## Technical Architecture
+`Client -> Django -> Data Ingestion -> Analytics (Pandas/TA-Lib) -> Plotly -> UI`
+
+## Challenges & Lessons Learned
+- Teknik indikatorlerde hesaplama dogrulugu ve veri guncelligi
+- Grafikleri hizli ve akici tutmak
+- Kullaniciya net ve eyleme donuk icgoru sunmak
+
+## Testing / Logging / Monitoring
+- Tests: Veri donusumleri ve grafik uretimi icin manuel kontroller; otomasyon planlaniyor
+- Logging: Django loglari ve hata yakalama
+- Monitoring: Barindirma metrikleri (opsiyonel)
 
 ## Kurulum
 

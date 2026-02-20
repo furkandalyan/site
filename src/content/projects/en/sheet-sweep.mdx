@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Sheet Sweep"
 summary: "Excel cleaner for transforming data."
 github: "https://github.com/furkandalyan/Sheet-Sweep.git"
@@ -20,5 +20,25 @@ Features:
 - Export to Excel / CSV / JSON / SQLite
 - Operation logs
 - Profiling reports (pandas-profiling / sweetviz)
+
+## Tech Stack
+- Python 3.x
+- Tkinter (GUI)
+- Pandas
+- OpenPyXL
+- CSV/JSON/SQLite exports
+
+## Technical Architecture
+`UI -> Data Loader -> Cleaner/Transformer -> Exporter -> Files/DB`
+
+## Challenges & Lessons Learned
+- Memory usage with large files
+- Preserving data types during transforms
+- Error handling for batch processing
+
+## Testing / Logging / Monitoring
+- Tests: Manual checks with different formats and corrupt data
+- Logging: Operation logs and output reports
+- Monitoring: Local app, no monitoring required
 
 GitHub: https://github.com/furkandalyan/Sheet-Sweep.git

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "borsa-v2"
 summary: "Django tabanli finans analiz web uygulamasi."
 github: "https://github.com/furkandalyan/borsa-v2.git"
@@ -19,3 +19,24 @@ Ozellikler:
 - Izleme listeleri ve alarmlar
 
 GitHub: https://github.com/furkandalyan/borsa-v2.git
+
+## Tech Stack
+- Django
+- yfinance
+- Plotly
+- HTML/CSS
+
+## Technical Architecture
+`Client -> Django Views -> Data Fetcher (yfinance) -> Indicator Engine -> Plotly Charts -> UI`
+Izleme listeleri ve alarmlar icin veri katmani bulunur.
+
+## Challenges & Lessons Learned
+- Finans verisinde tutarlilik ve rate-limit sorunlarini yonetmek
+- Teknik indikator hesaplamalarinda dogruluk ve performans dengesi
+- Grafiklerde performans ve kullanilabilirlik
+
+## Testing / Logging / Monitoring
+- Tests: Temel akislarda manuel smoke testler; otomasyon planlaniyor
+- Logging: Django istek ve hata loglari
+- Monitoring: Hosting platformu metrikleri (opsiyonel)
+

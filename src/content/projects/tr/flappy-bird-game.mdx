@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Flappy Bird Game"
 summary: "Pygame kütüphanesi kullanılarak geliştirilmiş, optimize edilmiş fizik motoruna ve özel varlık yönetimine sahip 2D oyun simülasyonu."
 github: "https://github.com/furkandalyan/Flappy-Bird.git"
@@ -30,6 +30,25 @@ Kullanıcı skorları, yerel dosya sisteminde güvenli bir I/O yapısı ile sakl
 | **Pygame** | Grafik render motoru, ses işleme ve giriş (input) yönetimi |
 | **Math Modülü** | Fizik hesaplamaları ve vektör işlemleri |
 | **OS/Sys** | Dosya sistemi yönetimi ve kaynak yolu çözümleme |
+
+## Tech Stack
+- Python 3.x
+- Pygame
+- Math Module
+- OS/Sys
+
+## Technical Architecture
+`Input -> Game Loop -> Physics & Collision -> Renderer -> Score Storage`
+
+## Challenges & Lessons Learned
+- Pixel-perfect collision ile adil carpisma algilama
+- FPS stabilizasyonu ve performans optimizasyonu
+- Varlik (asset) yukleme ve bellek yonetimi
+
+## Testing / Logging / Monitoring
+- Tests: Manuel oyun testleri (farkli FPS ve zorluk)
+- Logging: Debug overlay/console loglari (opsiyonel)
+- Monitoring: Yerel uygulama, izleme gerektirmez
 
 ## Kurulum
 

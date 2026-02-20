@@ -1,4 +1,4 @@
-﻿---
+---
 title: "BorsaApp"
 summary: "Django-based platform for technical analysis of Turkish stocks."
 github: "https://github.com/furkandalyan/BorsaApp.git"
@@ -15,5 +15,25 @@ Features:
 - MACD
 - Bollinger Bands
 - Additional technical indicators
+
+## Tech Stack
+- Django
+- Pandas
+- TA-Lib
+- Plotly
+- HTML/CSS/JS
+
+## Technical Architecture
+`Client -> Django -> Data Ingestion -> Analytics (Pandas/TA-Lib) -> Plotly -> UI`
+
+## Challenges & Lessons Learned
+- Indicator correctness and data freshness
+- Keeping charts fast and responsive
+- Turning analytics into actionable insights
+
+## Testing / Logging / Monitoring
+- Tests: Manual checks for data transforms and chart output; automation planned
+- Logging: Django logs and error capture
+- Monitoring: Hosting metrics (optional)
 
 GitHub: https://github.com/furkandalyan/BorsaApp.git

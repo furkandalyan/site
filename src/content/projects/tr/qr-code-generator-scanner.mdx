@@ -1,4 +1,4 @@
-﻿---
+---
 title: "QR Code Generator And Scanner"
 summary: "Python ve Tkinter ile geliştirilmiş, QR kod üretme ve tarama işlemlerini kolaylaştıran modern bir masaüstü uygulaması."
 github: "https://github.com/furkandalyan/QR-Code-Generator-Scanner.git"
@@ -36,6 +36,26 @@ Bu proje, görüntü işleme (OpenCV), GUI tasarımı ve harici kütüphanelerin
 | **Qrcode** | QR kod oluşturma |
 | **OpenCV** | Görüntü işleme ve webcam erişimi |
 | **Pyzbar** | QR kod ve barkod okuma |
+
+## Tech Stack
+- Python 3.x
+- Tkinter (GUI)
+- qrcode
+- OpenCV
+- pyzbar
+
+## Technical Architecture
+`UI -> QR Generator/Scanner -> Image/Camera I/O -> Output`
+
+## Challenges & Lessons Learned
+- Farkli kamera ve isik kosullarinda dogru okuma
+- Hatalara toleransli decode akisi
+- Uretilen QR kalitesi ve dosya ciktilari
+
+## Testing / Logging / Monitoring
+- Tests: Farkli QR ornekleriyle manuel testler
+- Logging: Basit islem ve hata loglari
+- Monitoring: Yerel uygulama, izleme gerektirmez
 
 ## Kurulum
 
