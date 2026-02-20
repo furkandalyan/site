@@ -1,24 +1,63 @@
 ﻿---
 title: "AES Locker"
-summary: "Modern dosya ve klasor sifreleme araci."
+summary: "Python ve Tkinter ile geliştirilmiş, AES-256 şifreleme kullanan modern bir dosya ve klasör şifreleme aracı."
 github: "https://github.com/furkandalyan/AESLocker-.git"
+tags: ["Python", "Security", "Desktop"]
 ---
 
-# AES Locker
+## 🔒 Proje Hakkında
 
-AES Locker, dosya ve klasorleri guvenli sekilde sifrelemek icin tasarlanmis modern bir arac.
+**AES Locker**, kullanıcıların hassas verilerini (dosya ve klasörler) güvenli bir şekilde şifrelemesini sağlayan, Python ve **Tkinter** tabanlı modern bir masaüstü uygulamasıdır. AES-256 algoritması kullanılarak geliştirilen bu proje, sürükle-bırak arayüzü ve opsiyonel RSA hibrit şifreleme desteği ile hem güvenlik hem de kullanım kolaylığı sunar.
 
-AES-256 kullanir, surukle-birak arayuzu vardir ve opsiyonel RSA hibrit sifreleme destekler. Anahtar dosyasi olusturma, gecerlilik suresi belirleme, anahtar bilgisini .aesf icine gommek ve cok dilli arayuz gibi ozellikler sunar.
+Bu proje, kriptografi temelleri, dosya sistemi işlemleri ve GUI tasarımı konularında pratik yapmak amacıyla geliştirilmiştir.
 
-Ozellikler:
-- AES-256 sifreleme
-- Surukle-birak GUI
-- RSA hibrit sifreleme secenegi
-- Anahtar dosyasi (.keyinfo)
-- Anahtar gecerlilik suresi
-- .aesf icine anahtar bilgisi gomulebilme
-- TR/EN arayuz
-- RSA anahtar cifti olusturma
-- Loglama
+---
 
-GitHub: https://github.com/furkandalyan/AESLocker-.git
+## ✨ Öne Çıkan Özellikler
+
+### 🛡️ Güçlü Şifreleme
+- **AES-256:** Endüstri standardı AES-256 algoritması kullanılarak verileriniz kırılması imkansız hale getirilir.
+- **RSA Hibrit Şifreleme:** Opsiyonel olarak RSA anahtar çifti kullanılarak şifreleme anahtarı da şifrelenir, böylece ekstra bir güvenlik katmanı sağlanır.
+
+### 🔑 Anahtar Yönetimi
+- **Anahtar Dosyası (.keyinfo):** Şifreleme anahtarı ayrı bir dosyada saklanabilir veya şifrelenmiş dosyanın içine gömülebilir (.aesf).
+- **Geçerlilik Süresi:** Anahtarların belirli bir süre sonra otomatik olarak geçersiz hale gelmesi sağlanabilir.
+
+### 🎨 Kullanıcı Dostu Arayüz
+- **Sürükle-Bırak:** Dosya ve klasörleri sürükleyip bırakarak kolayca şifreleyebilirsiniz.
+- **Çoklu Dil Desteği:** Türkçe ve İngilizce dil seçenekleri sunar.
+- **Loglama:** Yapılan tüm işlemler (şifreleme, çözme, hata vb.) log dosyasına kaydedilir.
+
+---
+
+## 🛠️ Kullanılan Teknolojiler
+
+| Teknoloji | Kullanım Amacı |
+|-----------|----------------|
+| **Python** | Ana programlama dili |
+| **Tkinter** | Grafiksel kullanıcı arayüzü (GUI) |
+| **PyCryptodome** | Kriptografik işlemler (AES, RSA) |
+| **OS / Sys** | Dosya sistemi yönetimi |
+
+---
+
+## 🚀 Nasıl Çalıştırılır?
+
+1.  **Repoyu Klonlayın:**
+    ```bash
+    git clone https://github.com/furkandalyan/AESLocker-.git
+    ```
+
+2.  **Gerekli Kütüphaneleri Yükleyin:**
+    ```bash
+    pip install pycryptodome
+    ```
+
+3.  **Uygulamayı Başlatın:**
+    ```bash
+    python main.py
+    ```
+
+---
+
+> *"Güvenlik bir ürün değil, bir süreçtir."*

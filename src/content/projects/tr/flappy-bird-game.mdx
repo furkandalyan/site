@@ -1,17 +1,62 @@
 ﻿---
 title: "Flappy Bird Game"
-summary: "Pygame ile geliştirilmiş Flappy Bird klonu."
+summary: "Pygame ile geliştirilmiş, özel tasarım assetler ve akıcı mekaniklere sahip modern bir Flappy Bird klonu."
 github: "https://github.com/furkandalyan/Flappy-Bird.git"
+tags: ["Python", "Pygame", "Game Dev"]
 ---
 
-# Flappy Bird Game
+## 🎮 Proje Hakkında
 
-Flappy Bird Clone (Pygame). Python ve Pygame ile geliştirdiğim klasik Flappy Bird oyununun özel bir versiyonu.
+Bu proje, efsanevi **Flappy Bird** oyununun Python ve **Pygame** kütüphanesi kullanılarak sıfırdan geliştirilmiş modern bir versiyonudur. Sadece bir klon olmanın ötesinde, oyun mekaniklerini en akıcı hale getirmek ve görsel deneyimi iyileştirmek için özel tasarım assetler kullanılmıştır.
 
-Özellikler:
-- Özel tasarım asset’ler
-- PNG tabanlı skor göstergesi
-- Akıcı kontroller
-- Kalıcı en yüksek skor sistemi
+Oyun geliştirme mantığını, fizik motoru simülasyonunu (yerçekimi, çarpışma testleri) ve asset yönetimini öğrenmek amacıyla geliştirdiğim bu proje, temiz kod yapısı ve genişletilebilir mimarisiyle dikkat çeker.
 
-GitHub: https://github.com/furkandalyan/Flappy-Bird.git
+---
+
+## ✨ Öne Çıkan Özellikler
+
+### 🎨 Özel Tasarım & Görsellik
+Standart oyun assetleri yerine, oyunun atmosferine uygun **özel tasarım grafikler** kullanıldı.
+- **PNG Tabanlı Skor Sistemi:** Skorlar standart fontlar yerine, oyunun sanat tarzıyla uyumlu özel PNG görselleriyle dinamik olarak oluşturulur.
+- **Akıcı Animasyonlar:** Kuşun kanat çırpma hareketleri ve zemin kayma efektleri, kare kare (frame-by-frame) işlenerek pürüzsüz bir görüntü sağlar.
+
+### ⚙️ Teknik Detaylar & Mekanikler
+- **Kalıcı Skor Sistemi (High Score):** Oyuncunun en yüksek skoru yerel dosyada şifreli bir şekilde saklanır, böylece oyun kapatılsa bile rekor kaybolmaz.
+- **Hassas Çarpışma (Collision Detection):** Pygame'in `mask` modülü kullanılarak piksel hassasiyetinde çarpışma testleri yapıldı. Bu sayede "havaya değdim ama yandım" sorunu ortadan kaldırıldı.
+- **Optimize Edilmiş Döngü:** Oyun döngüsü (Game Loop), sabit 60 FPS verecek şekilde optimize edildi, böylece her bilgisayarda aynı hızda çalışır.
+
+---
+
+## 🛠️ Kullanılan Teknolojiler
+
+| Teknoloji | Kullanım Amacı |
+|-----------|----------------|
+| **Python** | Ana programlama dili |
+| **Pygame** | Oyun motoru, grafik işleme ve ses yönetimi |
+| **OS / Sys** | Dosya sistemi yönetimi (skor kaydı vb.) |
+| **Random** | Boruların rastgele konumlarda oluşturulması |
+
+---
+
+## 🚀 Nasıl Çalıştırılır?
+
+Projeyi kendi bilgisayarınızda çalıştırmak için aşağıdaki adımları izleyebilirsiniz:
+
+1.  **Repoyu Klonlayın:**
+    ```bash
+    git clone https://github.com/furkandalyan/Flappy-Bird.git
+    ```
+
+2.  **Gerekli Kütüphaneleri Yükleyin:**
+    ```bash
+    pip install pygame
+    ```
+
+3.  **Oyunu Başlatın:**
+    ```bash
+    python main.py
+    ```
+
+---
+
+> *"Oyun geliştirmek, sadece kod yazmak değil; bir dünya yaratmak ve kurallarını belirlemektir."*

@@ -1,19 +1,69 @@
 ﻿---
 title: "BorsaApp"
-summary: "Turk hisseleri icin teknik analiz platformu."
+summary: "Django tabanlı, Türk hisseleri için teknik analiz ve görselleştirme platformu."
 github: "https://github.com/furkandalyan/BorsaApp.git"
+tags: ["Django", "Finance", "Data Science"]
 ---
 
-# BorsaApp
+## 📈 Proje Hakkında
 
-BorsaApp, Turk hisseleri icin teknik analiz yapan Django tabanli bir platformdur.
+**BorsaApp**, Borsa İstanbul (BIST) hisselerini takip etmek ve teknik analiz yapmak isteyen yatırımcılar için geliştirilmiş, **Django** tabanlı bir web platformudur. Kullanıcılar, hisse senetlerinin geçmiş verilerini inceleyebilir, popüler teknik indikatörleri (RSI, MACD, Bollinger Bands) grafik üzerinde görüntüleyebilir.
 
-RSI, MACD, Bollinger Bands ve daha fazlasi gibi teknik indikatorleri icerir.
+Bu proje, finansal veri analizi ile web geliştirmeyi birleştirerek, yatırım kararlarını destekleyecek güçlü bir araç sunmayı hedefler.
 
-Ozellikler:
-- RSI
-- MACD
-- Bollinger Bands
-- Diger teknik indikatorler
+---
 
-GitHub: https://github.com/furkandalyan/BorsaApp.git
+## ✨ Öne Çıkan Özellikler
+
+### 📊 Teknik Analiz Araçları
+- **RSI (Relative Strength Index):** Aşırı alım/satım bölgelerini belirlemek için kullanılır.
+- **MACD (Moving Average Convergence Divergence):** Trend dönüşlerini ve momentumu analiz eder.
+- **Bollinger Bands:** Volatiliteyi ve potansiyel fiyat kırılmalarını gösterir.
+
+### 📉 İnteraktif Grafikler
+- **Plotly Entegrasyonu:** Kullanıcılar grafik üzerinde yakınlaştırma (zoom), kaydırma (pan) yapabilir ve belirli tarih aralıklarını seçebilir.
+- **Dinamik Veri:** Seçilen hisse senedine göre grafikler ve indikatörler anlık olarak güncellenir.
+
+### ⚙️ Backend Mimarisi
+- **Django Framework:** Güvenli, ölçeklenebilir ve hızlı bir web altyapısı sağlar.
+- **Veri Entegrasyonu:** Finansal veriler API'ler aracılığıyla çekilir ve işlenir.
+
+---
+
+## 🛠️ Kullanılan Teknolojiler
+
+| Teknoloji | Kullanım Amacı |
+|-----------|----------------|
+| **Django** | Web framework ve backend mantığı |
+| **Pandas** | Finansal verilerin işlenmesi ve hesaplanması |
+| **TA-Lib** | Teknik analiz indikatörlerinin hesaplanması |
+| **Plotly** | İnteraktif grafiklerin oluşturulması |
+| **HTML/CSS/JS** | Frontend arayüzü |
+
+---
+
+## 🚀 Nasıl Çalıştırılır?
+
+1.  **Repoyu Klonlayın:**
+    ```bash
+    git clone https://github.com/furkandalyan/BorsaApp.git
+    ```
+
+2.  **Gerekli Kütüphaneleri Yükleyin:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3.  **Veritabanı Migrasyonlarını Yapın:**
+    ```bash
+    python manage.py migrate
+    ```
+
+4.  **Sunucuyu Başlatın:**
+    ```bash
+    python manage.py runserver
+    ```
+
+---
+
+> *"Piyasalar sabırsızlardan sabırlılara para aktaran bir mekanizmadır."*

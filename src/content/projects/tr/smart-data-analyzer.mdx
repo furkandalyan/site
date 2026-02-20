@@ -1,19 +1,62 @@
 ﻿---
 title: "Smart Data Analyzer"
-summary: "Streamlit tabanli interaktif veri kesif uygulamasi."
+summary: "Streamlit tabanlı, kod yazmadan veri analizi ve görselleştirme yapmayı sağlayan interaktif web uygulaması."
 github: "https://github.com/furkandalyan/SmartDataAnalyzer.git"
+tags: ["Python", "Streamlit", "Data Science"]
 ---
 
-# Smart Data Analyzer
+## 📊 Proje Hakkında
 
-Smart Data Analyzer, Python ve Streamlit ile gelistirilmis modern bir veri kesif uygulamasidir.
+**Smart Data Analyzer**, veri analizi süreçlerini demokratikleştirmek için geliştirilmiş, Python ve **Streamlit** tabanlı modern bir web uygulamasıdır. Kullanıcıların herhangi bir kod yazmadan CSV, Excel veya JSON dosyalarını yükleyerek anında içgörü (insight) elde etmesini sağlar.
 
-Kod yazmadan veri analizi yapmayi kolaylastirir. CSV, Excel ve JSON dosyalarini yukleyebilir, otomatik icgoru uretir, grafikler olusturur ve PDF rapor disari aktarir.
+Bu proje, veri bilimi araçlarını (Pandas, Plotly) kullanıcı dostu bir arayüzle birleştirerek, teknik olmayan kullanıcıların bile karmaşık veri setlerini keşfetmesine olanak tanır.
 
-Ozellikler:
-- CSV / Excel / JSON yukleme
-- Otomatik analiz ve icgoru
-- Profesyonel grafikler
-- PDF rapor disari aktarma
+---
 
-GitHub: https://github.com/furkandalyan/SmartDataAnalyzer.git
+## ✨ Öne Çıkan Özellikler
+
+### 📂 Çoklu Format Desteği
+- **CSV, Excel, JSON:** Farklı formatlardaki veri dosyalarını sorunsuz bir şekilde yükleyebilir ve işleyebilirsiniz.
+- **Otomatik Tip Algılama:** Sütunların sayısal mı, kategorik mi yoksa tarih mi olduğunu otomatik olarak algılar.
+
+### 📈 Otomatik Analiz ve Görselleştirme
+- **Hızlı İstatistikler:** Veri setinin özeti (ortalama, medyan, eksik veri oranı vb.) anında sunulur.
+- **İnteraktif Grafikler:** Plotly kütüphanesi kullanılarak dinamik histogramlar, scatter plotlar ve korelasyon matrisleri oluşturulur.
+
+### 📄 Raporlama
+- **PDF Dışa Aktarma:** Yapılan analizleri ve oluşturulan grafikleri tek tıkla profesyonel bir PDF raporu olarak indirebilirsiniz.
+
+---
+
+## 🛠️ Kullanılan Teknolojiler
+
+| Teknoloji | Kullanım Amacı |
+|-----------|----------------|
+| **Python** | Ana programlama dili |
+| **Streamlit** | Web arayüzü ve interaktif bileşenler |
+| **Pandas** | Veri manipülasyonu ve analizi |
+| **Plotly** | İnteraktif veri görselleştirme |
+| **FPDF** | PDF rapor oluşturma |
+
+---
+
+## 🚀 Nasıl Çalıştırılır?
+
+1.  **Repoyu Klonlayın:**
+    ```bash
+    git clone https://github.com/furkandalyan/SmartDataAnalyzer.git
+    ```
+
+2.  **Gerekli Kütüphaneleri Yükleyin:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3.  **Uygulamayı Başlatın:**
+    ```bash
+    streamlit run app.py
+    ```
+
+---
+
+> *"Veri, yeni petroldür; ancak işlenmediği sürece bir değeri yoktur."*

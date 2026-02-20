@@ -1,22 +1,72 @@
 ﻿---
 title: "PDF TOOL BOX"
-summary: "PDF yonetimi icin modern masaustu uygulamasi."
+summary: "Python ve Tkinter ile geliştirilmiş, PDF dosyalarını yönetmek ve düzenlemek için modern bir masaüstü uygulaması."
 github: "https://github.com/furkandalyan/PDF-TOOL-BOX.git"
+tags: ["Python", "Tkinter", "Desktop", "OCR"]
 ---
 
-# PDF TOOL BOX
+## 📄 Proje Hakkında
 
-PDF TOOL BOX, PDF dosyalarini yonetmek ve duzenlemek icin modern bir masaustu uygulamasidir.
+**PDF TOOL BOX**, PDF dosyalarını birleştirmek, bölmek, şifrelemek, döndürmek ve metin çıkarmak gibi işlemleri kolaylaştıran, Python ve **Tkinter** tabanlı modern bir masaüstü uygulamasıdır. Kullanıcı dostu arayüzü ve güçlü özellikleri ile PDF yönetimini basitleştirir.
 
-Koyu tema arayuzu ile birlestirme, bolme, sayfa silme, toplu sifreleme/dondurme, OCR ile metin cikarma ve metadata duzenleme gibi bircok ozellik sunar.
+Bu proje, dosya işlemleri, GUI tasarımı ve harici kütüphanelerin (PyPDF2, Tesseract OCR) entegrasyonu konularında pratik yapmak amacıyla geliştirilmiştir.
 
-Ozellikler:
-- PDF birlestirme (ozel siralama)
-- Araliga veya yer imlerine gore bolme
-- Sayfa silme
-- Toplu sifreleme ve dondurme
-- OCR metin cikarma
-- Metadata duzenleme
-- Undo/Redo
+---
 
-GitHub: https://github.com/furkandalyan/PDF-TOOL-BOX.git
+## ✨ Öne Çıkan Özellikler
+
+### 🛠️ Kapsamlı PDF Araçları
+- **Birleştirme (Merge):** Birden fazla PDF dosyasını tek bir dosyada birleştirir.
+- **Bölme (Split):** PDF dosyalarını sayfa aralıklarına veya yer imlerine göre böler.
+- **Sayfa Silme:** İstenmeyen sayfaları PDF'den kaldırır.
+- **Döndürme (Rotate):** Sayfaları 90, 180 veya 270 derece döndürür.
+
+### 🔒 Güvenlik ve Şifreleme
+- **Toplu Şifreleme:** Birden fazla PDF dosyasını aynı anda şifreleyerek güvenliğini sağlar.
+- **Şifre Kaldırma:** Şifreli PDF dosyalarının şifresini kaldırır (şifre biliniyorsa).
+
+### 📝 Metin İşleme (OCR)
+- **OCR Desteği:** Tesseract OCR motoru kullanılarak taranmış PDF dosyalarından metin çıkarılır.
+- **Metadata Düzenleme:** PDF dosyasının başlık, yazar, konu gibi meta verilerini düzenler.
+
+### 🎨 Modern Arayüz
+- **Koyu Tema (Dark Mode):** Göz yormayan modern bir arayüz sunar.
+- **Undo/Redo:** Yapılan işlemleri geri alma ve yineleme özelliği ile hata yapma korkusunu ortadan kaldırır.
+
+---
+
+## 🛠️ Kullanılan Teknolojiler
+
+| Teknoloji | Kullanım Amacı |
+|-----------|----------------|
+| **Python** | Ana programlama dili |
+| **Tkinter** | Grafiksel kullanıcı arayüzü (GUI) |
+| **PyPDF2** | PDF işlemleri (birleştirme, bölme, şifreleme) |
+| **Tesseract OCR** | Görüntüden metin çıkarma |
+| **Pillow (PIL)** | Görüntü işleme |
+
+---
+
+## 🚀 Nasıl Çalıştırılır?
+
+1.  **Repoyu Klonlayın:**
+    ```bash
+    git clone https://github.com/furkandalyan/PDF-TOOL-BOX.git
+    ```
+
+2.  **Gerekli Kütüphaneleri Yükleyin:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3.  **Tesseract OCR Kurulumu:**
+    - Tesseract OCR'ı sisteminize kurun ve yolunu belirtin.
+
+4.  **Uygulamayı Başlatın:**
+    ```bash
+    python main.py
+    ```
+
+---
+
+> *"Dijital dünyada kağıtların yerini PDF'ler aldı, onları yönetmek ise artık çok daha kolay."*
