@@ -1,0 +1,49 @@
+﻿---
+title: "Tempus Naviga"
+summary: "Gunluk planlama, gorev yonetimi ve uretkenlik takibi sunan kapsamli web uygulamasi."
+github: "https://github.com/furkandalyan/tempus-naviga.git"
+tags: ["Web", "Productivity", "Community"]
+---
+
+## Proje Ozeti
+
+Tempus Naviga, kullanicilarin gunluk islerini planlamasina, gorevlerini yonetmesine ve uretkenlik aliskanliklarini takip etmesine yardimci olan kapsamli bir web uygulamasidir. Kullanicilar gorev olusturabilir, tamamlanan isleri takip edebilir, uretkenlik raporlariyla ilerlemelerini analiz edebilir ve duzenli bildirimler alabilir. Ayrica blog ve deneyim paylasimi modulleri sayesinde topluluk etkilesimi desteklenir; kullanicilar icerik uretip birbirlerinin deneyimlerinden faydalanabilir. Profil ayarlari, gorsel yukleme ve kullanici yonetimi gibi temel ozelliklerle birlikte, platform sade ama islevsel bir arayuz sunar.
+
+## Ozellikler
+- Gorev olusturma, tamamlama ve takip
+- Uretkenlik raporlari ve ilerleme analizi
+- Hatirlatici ve bildirim akislari
+- Blog ve deneyim paylasimi modulleri
+- Profil ayarlari ve gorsel yukleme
+- Kullanici yonetimi ve topluluk etkilesimi
+
+## Tech Stack
+- Web Frontend (UI)
+- Backend API ve is katmani
+- Iliskisel veri tabani
+- Bildirim servisleri
+- Dosya/medya depolama
+
+## Technical Architecture
+`Client -> API -> Service Layer -> DB`
+`Scheduler/Worker -> Notification Service -> Client`
+
+## Challenges & Lessons Learned
+- Gorev, rapor ve topluluk modullerini tek bir urunde dengeli tasarlamak
+- Veri modeli ve raporlama performansi arasinda dogru dengeyi kurmak
+- Bildirim akislarini zamaninda ve kullanici dostu yapmak
+
+## Testing / Logging / Monitoring
+- Tests: Manuel senaryolar (gorev akislari, raporlar, bildirimler); otomasyon planlaniyor
+- Logging: Aktivite ve hata loglari
+- Monitoring: Temel uygulama metrikleri (opsiyonel)
+
+## Kurulum
+
+Projeyi yerel ortamda calistirmak icin depoyu klonlayin ve README adimlarini izleyin:
+
+1. Depoyu klonlayin:
+   ```bash
+   git clone https://github.com/furkandalyan/tempus-naviga.git
+   ```
+2. README'deki kurulum ve calistirma adimlarini takip edin.

@@ -151,6 +151,15 @@ export const projects: Project[] = [
     github: "https://github.com/furkandalyan/BugTrackingSystem.git",
   },
   {
+    slug: "tempus-naviga",
+    title: "Tempus Naviga",
+    summary:
+      "Zaman yonetimi ve uretkenlik odakli, gorev planlama, raporlama ve topluluk modulleri sunan web uygulamasi.",
+    lang: "tr",
+    tags: ["Web", "Productivity", "Community"],
+    github: "https://github.com/furkandalyan/tempus-naviga.git",
+  },
+  {
     slug: "sample-project",
     title: "Sample Project",
     summary: "Short summary: What does this project solve?",
@@ -291,6 +300,15 @@ export const projects: Project[] = [
     lang: "en",
     tags: ["Django", "Web", "Productivity"],
     github: "https://github.com/furkandalyan/BugTrackingSystem.git",
+  },
+  {
+    slug: "tempus-naviga",
+    title: "Tempus Naviga",
+    summary:
+      "Comprehensive web app for task planning, productivity tracking, and community sharing.",
+    lang: "en",
+    tags: ["Web", "Productivity", "Community"],
+    github: "https://github.com/furkandalyan/tempus-naviga.git",
   },
 ];
 
