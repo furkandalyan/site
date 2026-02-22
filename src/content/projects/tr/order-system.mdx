@@ -1,0 +1,51 @@
+﻿---
+title: "Order System"
+summary: "Django tabanli e-ticaret/marketplace projesi. Alici-satici rolleri, urun listeleme, siparis akisi, analitik ve AI onerileri."
+github: "https://github.com/furkandalyan/OrderSystem.git"
+tags: ["Django", "E-Commerce", "Marketplace"]
+---
+
+## Proje Ozeti
+
+Order System, Django tabanli bir e-ticaret/marketplace projesidir. Alici ve satici rolleriyle urun listeleme, siparis olusturma, satis/harcama analitigi ve temel finans hareketlerinin yonetimine odaklanir. Proje; urun yonetimi, siparis akisleri, kullanici profili ve AI destekli urun/satis onerileri gibi ozellikleri moduler uygulamalar halinde sunar. Odeme entegrasyonu ve bildirim altyapisi icin cevresel degiskenlerle yapilandirilabilir sekilde tasarlanmistir.
+
+## Ozellikler
+- Alici/satici rolleri ve profil yonetimi
+- Urun listeleme ve katalog yonetimi
+- Siparis olusturma ve durum takibi
+- Satis/harcama analitigi ve temel finans hareketleri
+- AI destekli urun ve satis onerileri
+- Odeme entegrasyonu ve bildirim altyapisi (env ile)
+
+## Tech Stack
+- Django
+- Django ORM
+- Iliskisel veri tabani
+- Odeme entegrasyonu
+- Bildirim servisi
+- AI oneriler modulu
+
+## Technical Architecture
+`Client -> Django Views -> Service Layer -> DB`
+`Recommendation Engine -> Service Layer`
+`Payment Gateway -> Order Flow`
+
+## Challenges & Lessons Learned
+- Marketplace senaryosunda rol ve yetkilendirme modelini dogru kurmak
+- Siparis akisi ve finans hareketlerinde veri tutarliligi
+- Oneri modellerini urun deneyimine dogal sekilde entegre etmek
+
+## Testing / Logging / Monitoring
+- Tests: Manuel senaryolar (siparis akisi, rol yetkileri, odeme/ bildirim akislari); otomasyon planlaniyor
+- Logging: Islem ve hata loglari
+- Monitoring: Temel uygulama metrikleri (opsiyonel)
+
+## Kurulum
+
+Projeyi yerel ortamda calistirmak icin depoyu klonlayin ve README adimlarini izleyin:
+
+1. Depoyu klonlayin:
+   ```bash
+   git clone https://github.com/furkandalyan/OrderSystem.git
+   ```
+2. README'deki kurulum ve calistirma adimlarini takip edin.

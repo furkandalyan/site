@@ -151,6 +151,15 @@ export const projects: Project[] = [
     github: "https://github.com/furkandalyan/BugTrackingSystem.git",
   },
   {
+    slug: "order-system",
+    title: "Order System",
+    summary:
+      "Django tabanli e-ticaret/marketplace. Alici-satici rolleri, urun listeleme, siparis akisi, analitik ve AI onerileri.",
+    lang: "tr",
+    tags: ["Django", "E-Commerce", "Marketplace"],
+    github: "https://github.com/furkandalyan/OrderSystem.git",
+  },
+  {
     slug: "tempus-naviga",
     title: "Tempus Naviga",
     summary:
@@ -300,6 +309,15 @@ export const projects: Project[] = [
     lang: "en",
     tags: ["Django", "Web", "Productivity"],
     github: "https://github.com/furkandalyan/BugTrackingSystem.git",
+  },
+  {
+    slug: "order-system",
+    title: "Order System",
+    summary:
+      "Django-based ecommerce/marketplace with buyer-seller roles, order flow, analytics, and AI recommendations.",
+    lang: "en",
+    tags: ["Django", "E-Commerce", "Marketplace"],
+    github: "https://github.com/furkandalyan/OrderSystem.git",
   },
   {
     slug: "tempus-naviga",

@@ -1,0 +1,51 @@
+﻿---
+title: "Order System"
+summary: "Django-based ecommerce/marketplace project with buyer-seller roles, order flow, analytics, and AI recommendations."
+github: "https://github.com/furkandalyan/OrderSystem.git"
+tags: ["Django", "E-Commerce", "Marketplace"]
+---
+
+## Project Summary
+
+Order System is a Django-based ecommerce/marketplace project. It focuses on buyer and seller roles with product listings, order creation, sales/spend analytics, and basic financial movements. The project is organized into modular apps for product management, order flow, user profiles, and AI-assisted product/sales recommendations. Payment integration and notification infrastructure are designed to be configurable via environment variables.
+
+## Key Features
+- Buyer/seller roles and profile management
+- Product listings and catalog management
+- Order creation and status tracking
+- Sales/spend analytics and basic financial flows
+- AI-assisted product and sales recommendations
+- Payment integration and notification infrastructure (env-configurable)
+
+## Tech Stack
+- Django
+- Django ORM
+- Relational database
+- Payment integration
+- Notification service
+- AI recommendation module
+
+## Technical Architecture
+`Client -> Django Views -> Service Layer -> DB`
+`Recommendation Engine -> Service Layer`
+`Payment Gateway -> Order Flow`
+
+## Challenges & Lessons Learned
+- Modeling roles and permissions for a marketplace
+- Data consistency across order and financial flows
+- Integrating recommendations without disrupting the core UX
+
+## Testing / Logging / Monitoring
+- Tests: Manual scenarios (order flow, permissions, payment/notification flows); automation planned
+- Logging: Operation and error logs
+- Monitoring: Basic application metrics (optional)
+
+## Installation
+
+Clone the repository and follow the README setup steps:
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/furkandalyan/OrderSystem.git
+   ```
+2. Follow the README for install and run steps.
