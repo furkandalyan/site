@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -27,10 +28,17 @@ export default function Navbar({
         <div className="flex h-14 items-center justify-between">
           <Link
             href={`/${lang}`}
-            className="text-xl sm:text-2xl font-normal tracking-wide hover:opacity-70 transition-opacity duration-200 cursor-pointer font-serif italic whitespace-nowrap"
-            style={{ fontFamily: "Times New Roman, serif" }}
+            className="inline-flex items-center gap-3 hover:opacity-80 transition-opacity duration-200"
+            aria-label="Home"
           >
-            Mahir Furkan Dalyan
+            <Image
+              src="/logo.svg"
+              alt="Logo"
+              width={36}
+              height={36}
+              className="h-9 w-9"
+              priority
+            />
           </Link>
 
           <div className="flex items-center gap-3 sm:hidden">

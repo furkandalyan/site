@@ -1,4 +1,5 @@
-ï»¿import Navbar from "@/src/components/Navbar";
+import Footer from "@/src/components/Footer";
+import Navbar from "@/src/components/Navbar";
 
 export default async function LangLayout({
   children,
@@ -20,8 +21,8 @@ export default async function LangLayout({
     tr: {
       projects: "Projeler",
       blog: "Blog",
-      about: "HakkÄ±mda",
-      contact: "Ä°letiÅŸim",
+      about: "Hakkýmda",
+      contact: "Ýletiþim",
     },
   };
   const labels = navLabels[lang] ?? navLabels.en;
@@ -33,6 +34,8 @@ export default async function LangLayout({
       <main className="flex-1 mx-auto w-full max-w-screen-xl p-6 md:p-10">
         {children}
       </main>
+
+      <Footer lang={lang} />
     </div>
   );
 }
