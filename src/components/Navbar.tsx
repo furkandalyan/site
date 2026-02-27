@@ -32,7 +32,7 @@ export default function Navbar({
             aria-label="Home"
           >
             <Image
-              src="/logo.svg"
+              src="/logo.png"
               alt="Logo"
               width={36}
               height={36}
