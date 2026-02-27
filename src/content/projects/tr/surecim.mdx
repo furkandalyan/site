@@ -1,0 +1,51 @@
+﻿---
+title: "Surecim"
+summary: "Turkiye'deki resmi islemleri adim adim takip etmeyi saglayan web uygulamasi; belge, sure, maliyet ve resmi baglanti detaylariyla ilerleme takibi."
+github: "https://github.com/furkandalyan/surecim.git"
+tags: ["Web", "Productivity", "GovTech"]
+---
+
+## Proje Ozeti
+
+Surecim, Turkiye'deki resmi islemleri (ehliyet yenileme, pasaport basvurusu, adres degisikligi vb.) adim adim takip etmeyi amaclayan bir web uygulamasidir. Her surec kategori altinda listelenir; gerekli belgeler, tahmini sure, maliyet kalemleri ve resmi baglantilar gibi bilgiler sunulur. Kullanicilar bir sureci baslatip kendi ilerlemelerini izleyebilir; adimlar tamamlandikca ilerleme yuzdesi guncellenir. Kullanici panelinde aktif, tamamlanmis ve iptal edilen surecler ayri ayri yonetilir. Icerikler admin panelden guncellenebilir ve email bildirimleri icin altyapi hazirdir.
+
+## Ozellikler
+- Kategorilere gore surec katalogu ve detay sayfalari
+- Adim, belge, sure, maliyet ve resmi baglanti listeleri
+- Kullanici bazli surec baslatma ve ilerleme takibi
+- Aktif/tamamlanmis/iptal surec panelleri
+- Admin panel ile icerik guncelleme
+- Email bildirim altyapisi icin hazir entegrasyon
+
+## Tech Stack
+- Python
+- Django
+- Django ORM
+- PostgreSQL (psycopg2)
+- Gunicorn
+- WhiteNoise (statik dosyalar)
+- python-dotenv, dj-database-url
+
+## Technical Architecture
+`Client -> Django Views -> Service Layer -> PostgreSQL`
+`Gunicorn -> WhiteNoise -> Static Assets`
+
+## Challenges & Lessons Learned
+- Farkli resmi sureclerin tek bir modelde normalize edilmesi
+- Adim ve belge listelerinin kullanici deneyimine uygun sunulmasi
+- Ilerleme hesaplamalarinin tutarli tutulmasi
+
+## Testing / Logging / Monitoring
+- Tests: Manuel senaryo testleri (surec baslatma, adim tamamlama, panel filtreleri)
+- Logging: Temel uygulama loglari
+- Monitoring: Hosting metrikleri (opsiyonel)
+
+## Kurulum
+
+Projeyi yerel ortamda calistirmak icin depoyu klonlayin ve README adimlarini izleyin:
+
+1. Depoyu klonlayin:
+   ```bash
+   git clone https://github.com/furkandalyan/surecim.git
+   ```
+2. README'deki kurulum ve calistirma adimlarini takip edin.

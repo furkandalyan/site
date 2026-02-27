@@ -5,6 +5,7 @@ export type Project = {
   lang: "tr" | "en";
   tags?: string[];
   github?: string;
+  demo?: string;
 };
 
 export const projects: Project[] = [
@@ -169,6 +170,16 @@ export const projects: Project[] = [
     github: "https://github.com/furkandalyan/tempus-naviga.git",
   },
   {
+    slug: "surecim",
+    title: "Surecim",
+    summary:
+      "Turkiye'deki resmi islemleri adim adim takip etmeyi saglayan web uygulamasi; belge, sure, maliyet ve resmi baglanti detaylariyla ilerleme takibi.",
+    lang: "tr",
+    tags: ["Web", "Productivity", "GovTech"],
+    github: "https://github.com/furkandalyan/surecim.git",
+    demo: "https://surecim.mahirfurkandalyan.com/",
+  },
+  {
     slug: "sample-project",
     title: "Sample Project",
     summary: "Short summary: What does this project solve?",
@@ -327,6 +338,16 @@ export const projects: Project[] = [
     lang: "en",
     tags: ["Web", "Productivity", "Community"],
     github: "https://github.com/furkandalyan/tempus-naviga.git",
+  },
+  {
+    slug: "surecim",
+    title: "Surecim",
+    summary:
+      "Web app for step-by-step tracking of official procedures in Turkey, with documents, time, cost, and official links plus progress tracking.",
+    lang: "en",
+    tags: ["Web", "Productivity", "GovTech"],
+    github: "https://github.com/furkandalyan/surecim.git",
+    demo: "https://surecim.mahirfurkandalyan.com/",
   },
 ];
 

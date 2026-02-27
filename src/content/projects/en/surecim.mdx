@@ -1,0 +1,51 @@
+﻿---
+title: "Surecim"
+summary: "Web app for step-by-step tracking of official procedures in Turkey, with documents, time, cost, and official links plus progress tracking."
+github: "https://github.com/furkandalyan/surecim.git"
+tags: ["Web", "Productivity", "GovTech"]
+---
+
+## Project Summary
+
+Surecim is a web application designed to guide users through official procedures in Turkey (driver license renewal, passport application, address change, etc.). Each process is listed under a category and includes steps, required documents, estimated duration, cost items, and official links. Users can start a process and track their progress as they complete steps, with the percentage updated automatically. The user panel separates active, completed, and canceled processes. Content can be updated from an admin panel, and the system is ready for email notifications.
+
+## Key Features
+- Category-based process catalog and detail pages
+- Steps, documents, time, cost, and official link lists
+- User-based process start and progress tracking
+- Active/completed/canceled process panels
+- Admin panel for content updates
+- Email notification-ready infrastructure
+
+## Tech Stack
+- Python
+- Django
+- Django ORM
+- PostgreSQL (psycopg2)
+- Gunicorn
+- WhiteNoise (static files)
+- python-dotenv, dj-database-url
+
+## Technical Architecture
+`Client -> Django Views -> Service Layer -> PostgreSQL`
+`Gunicorn -> WhiteNoise -> Static Assets`
+
+## Challenges & Lessons Learned
+- Normalizing diverse official processes into a single model
+- Presenting steps and document lists with a clear UX
+- Keeping progress calculations consistent
+
+## Testing / Logging / Monitoring
+- Tests: Manual scenario tests (process start, step completion, panel filters)
+- Logging: Basic application logs
+- Monitoring: Hosting metrics (optional)
+
+## Installation
+
+Clone the repository and follow the README setup steps:
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/furkandalyan/surecim.git
+   ```
+2. Follow the README for install and run steps.
