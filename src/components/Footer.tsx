@@ -1,1 +1,27 @@
-浩潰瑲䤠慭敧映潲⁭渢硥⽴浩条≥਻浩潰瑲䰠湩⁫牦浯∠敮瑸氯湩≫਻攊灸牯⁴敤慦汵⁴畦据楴湯䘠潯整⡲⁻慬杮素›⁻慬杮›瑳楲杮素 ੻†潣獮⁴敹牡㴠渠睥䐠瑡⡥⸩敧䙴汵奬慥⡲㬩ਊ†敲畴湲⠠ †㰠潦瑯牥挠慬獳慎敭∽潢摲牥琭戠牯敤⵲桷瑩⽥〱㸢 ††㰠楤⁶汣獡乳浡㵥洢⵸畡潴洠硡眭猭牣敥⵮汸瀠⵸‴浳瀺⵸‶祰㠭映敬⁸瑩浥⵳散瑮牥樠獵楴祦戭瑥敷湥㸢 †††㰠楌歮 ††††栠敲㵦恻␯汻湡絧絠 ††††挠慬獳慎敭∽湩楬敮昭敬⁸瑩浥⵳散瑮牥朠灡㌭栠癯牥漺慰楣祴㠭‰牴湡楳楴湯漭慰楣祴搠牵瑡潩⵮〲∰ ††††愠楲ⵡ慬敢㵬䠢浯≥ †††㸠 ††††㰠浉条੥††††††牳㵣⼢潬潧献杶ਢ††††††污㵴䰢杯≯ †††††眠摩桴笽㠲੽††††††敨杩瑨笽㠲੽††††††汣獡乳浡㵥栢㜭眠㜭ਢ†††††㸯 †††㰠䰯湩㹫 †††㰠灳湡挠慬獳慎敭∽整瑸砭⁳整瑸眭楨整㐯∰ꤾ笠敹牡㱽猯慰㹮 ††㰠搯癩ਾ††⼼潦瑯牥ਾ†㬩紊
+import Image from "next/image";
+import Link from "next/link";
+
+export default function Footer({ lang }: { lang: string }) {
+  const year = new Date().getFullYear();
+
+  return (
+    <footer className="border-t border-white/10">
+      <div className="mx-auto max-w-screen-xl px-4 sm:px-6 py-8 flex items-center justify-between">
+        <Link
+          href={`/${lang}`}
+          className="inline-flex items-center gap-3 hover:opacity-80 transition-opacity duration-200"
+          aria-label="Home"
+        >
+          <Image
+            src="/logo.svg"
+            alt="Logo"
+            width={28}
+            height={28}
+            className="h-7 w-7"
+          />
+        </Link>
+        <span className="text-xs text-white/40">© {year}</span>
+      </div>
+    </footer>
+  );
+}

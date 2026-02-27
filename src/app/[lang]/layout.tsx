@@ -1,1 +1,41 @@
-浩潰瑲䘠潯整⁲牦浯∠⽀牳⽣潣灭湯湥獴䘯潯整≲਻浩潰瑲丠癡慢⁲牦浯∠⽀牳⽣潣灭湯湥獴丯癡慢≲਻攊灸牯⁴敤慦汵⁴獡湹⁣畦据楴湯䰠湡䱧祡畯⡴੻†档汩牤湥ਬ†慰慲獭ਬ㩽笠 挠楨摬敲㩮删慥瑣刮慥瑣潎敤਻†慰慲獭›牐浯獩㱥⁻慬杮›瑳楲杮素㬾紊 ੻†潣獮⁴⁻慬杮素㴠愠慷瑩瀠牡浡㭳ਊ†潣獮⁴灯潰楳整慌杮㴠氠湡⁧㴽‽琢≲㼠∠湥•›琢≲਻†潣獮⁴慮䱶扡汥㩳删捥牯㱤瑳楲杮‬⁻牰橯捥獴›瑳楲杮※汢杯›瑳楲杮※扡畯㩴猠牴湩㭧挠湯慴瑣›瑳楲杮素‾‽੻††湥›੻†††牰橯捥獴›倢潲敪瑣≳ਬ†††汢杯›䈢潬≧ਬ†††扡畯㩴∠扁畯≴ਬ†††潣瑮捡㩴∠潃瑮捡≴ਬ††ⱽ †琠㩲笠 ††瀠潲敪瑣㩳∠牐橯汥牥Ⱒ ††戠潬㩧∠求杯Ⱒ ††愠潢瑵›䠢歡ﵫ摭≡ਬ†††潣瑮捡㩴∠泝瑥﹩浩Ⱒ †素ਬ†㭽 挠湯瑳氠扡汥⁳‽慮䱶扡汥孳慬杮⁝㼿渠癡慌敢獬攮㭮ਊ†敲畴湲⠠ †㰠楤⁶汣獡乳浡㵥洢湩栭猭牣敥⁮汦硥映敬⵸潣⁬杢戭慬正琠硥⵴桷瑩⁥敳敬瑣潩㩮杢眭楨整猠汥捥楴湯琺硥⵴汢捡≫ਾ†††丼癡慢⁲慬杮笽慬杮⁽灯潰楳整慌杮笽灯潰楳整慌杮⁽慬敢獬笽慬敢獬⁽㸯ਊ†††洼楡⁮汣獡乳浡㵥昢敬⵸‱硭愭瑵⁯⵷畦汬洠硡眭猭牣敥⵮汸瀠㘭洠㩤⵰〱㸢 †††笠档汩牤湥੽†††⼼慭湩ਾ ††㰠潆瑯牥氠湡㵧汻湡絧⼠ਾ††⼼楤㹶 ⤠਻
+import Footer from "@/src/components/Footer";
+import Navbar from "@/src/components/Navbar";
+
+export default async function LangLayout({
+  children,
+  params,
+}: {
+  children: React.ReactNode;
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+
+  const oppositeLang = lang === "tr" ? "en" : "tr";
+  const navLabels: Record<string, { projects: string; blog: string; about: string; contact: string }> = {
+    en: {
+      projects: "Projects",
+      blog: "Blog",
+      about: "About",
+      contact: "Contact",
+    },
+    tr: {
+      projects: "Projeler",
+      blog: "Blog",
+      about: "Hakkımda",
+      contact: "İletişim",
+    },
+  };
+  const labels = navLabels[lang] ?? navLabels.en;
+
+  return (
+    <div className="min-h-screen flex flex-col bg-black text-white selection:bg-white selection:text-black">
+      <Navbar lang={lang} oppositeLang={oppositeLang} labels={labels} />
+
+      <main className="flex-1 mx-auto w-full max-w-screen-xl p-6 md:p-10">
+        {children}
+      </main>
+
+      <Footer lang={lang} />
+    </div>
+  );
+}
