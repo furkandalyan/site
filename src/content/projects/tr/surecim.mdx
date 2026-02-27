@@ -1,21 +1,21 @@
-﻿---
+---
 title: "Surecim"
-summary: "Turkiye'deki resmi islemleri adim adim takip etmeyi saglayan web uygulamasi; belge, sure, maliyet ve resmi baglanti detaylariyla ilerleme takibi."
+summary: "Türkiye'deki resmi işlemleri adım adım takip etmeyi sağlayan web uygulaması; belge, süre, maliyet ve resmi bağlantı detaylarıyla ilerleme takibi."
 github: "https://github.com/furkandalyan/surecim.git"
 tags: ["Web", "Productivity", "GovTech"]
 ---
 
-## Proje Ozeti
+## Proje Özeti
 
-Surecim, Turkiye'deki resmi islemleri (ehliyet yenileme, pasaport basvurusu, adres degisikligi vb.) adim adim takip etmeyi amaclayan bir web uygulamasidir. Her surec kategori altinda listelenir; gerekli belgeler, tahmini sure, maliyet kalemleri ve resmi baglantilar gibi bilgiler sunulur. Kullanicilar bir sureci baslatip kendi ilerlemelerini izleyebilir; adimlar tamamlandikca ilerleme yuzdesi guncellenir. Kullanici panelinde aktif, tamamlanmis ve iptal edilen surecler ayri ayri yonetilir. Icerikler admin panelden guncellenebilir ve email bildirimleri icin altyapi hazirdir.
+Surecim, Türkiye'deki resmi işlemleri (ehliyet yenileme, pasaport başvurusu, adres değişikliği vb.) adım adım takip etmeyi amaçlayan bir web uygulamasıdır. Her süreç kategori altında listelenir; gerekli belgeler, tahmini süre, maliyet kalemleri ve resmi bağlantılar gibi bilgiler sunulur. Kullanıcılar bir süreci başlatıp kendi ilerlemelerini izleyebilir; adımlar tamamlandıkça ilerleme yüzdesi güncellenir. Kullanıcı panelinde aktif, tamamlanmış ve iptal edilen süreçler ayrı ayrı yönetilir. İçerikler admin panelden güncellenebilir ve e-posta bildirimleri için altyapı hazırdır.
 
-## Ozellikler
-- Kategorilere gore surec katalogu ve detay sayfalari
-- Adim, belge, sure, maliyet ve resmi baglanti listeleri
-- Kullanici bazli surec baslatma ve ilerleme takibi
-- Aktif/tamamlanmis/iptal surec panelleri
-- Admin panel ile icerik guncelleme
-- Email bildirim altyapisi icin hazir entegrasyon
+## Özellikler
+- Kategorilere göre süreç kataloğu ve detay sayfaları
+- Adım, belge, süre, maliyet ve resmi bağlantı listeleri
+- Kullanıcı bazlı süreç başlatma ve ilerleme takibi
+- Aktif/tamamlanmış/iptal süreç panelleri
+- Admin panel ile içerik güncelleme
+- E-posta bildirim altyapısı için hazır entegrasyon
 
 ## Tech Stack
 - Python
@@ -31,21 +31,21 @@ Surecim, Turkiye'deki resmi islemleri (ehliyet yenileme, pasaport basvurusu, adr
 `Gunicorn -> WhiteNoise -> Static Assets`
 
 ## Challenges & Lessons Learned
-- Farkli resmi sureclerin tek bir modelde normalize edilmesi
-- Adim ve belge listelerinin kullanici deneyimine uygun sunulmasi
-- Ilerleme hesaplamalarinin tutarli tutulmasi
+- Farklı resmi süreçlerin tek bir modelde normalize edilmesi
+- Adım ve belge listelerinin kullanıcı deneyimine uygun sunulması
+- İlerleme hesaplamalarının tutarlı tutulması
 
 ## Testing / Logging / Monitoring
-- Tests: Manuel senaryo testleri (surec baslatma, adim tamamlama, panel filtreleri)
-- Logging: Temel uygulama loglari
+- Tests: Manuel senaryo testleri (süreç başlatma, adım tamamlama, panel filtreleri)
+- Logging: Temel uygulama logları
 - Monitoring: Hosting metrikleri (opsiyonel)
 
 ## Kurulum
 
-Projeyi yerel ortamda calistirmak icin depoyu klonlayin ve README adimlarini izleyin:
+Projeyi yerel ortamda çalıştırmak için depoyu klonlayın ve README adımlarını izleyin:
 
-1. Depoyu klonlayin:
+1. Depoyu klonlayın:
    ```bash
    git clone https://github.com/furkandalyan/surecim.git
    ```
-2. README'deki kurulum ve calistirma adimlarini takip edin.
+2. README'deki kurulum ve çalıştırma adımlarını takip edin.
