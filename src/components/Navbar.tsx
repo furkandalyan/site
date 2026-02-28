@@ -25,6 +25,7 @@ export default function Navbar({
   const oppositeLangLabel = oppositeLang.toUpperCase();
   const switchTitle =
     oppositeLang === "tr" ? "Switch to Turkish" : "Switch to English";
+  const isTr = lang === "tr";
 
   return (
     <nav className="sticky top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur-md backdrop-saturate-150 supports-[backdrop-filter]:bg-black/60">
@@ -46,28 +47,32 @@ export default function Navbar({
           </Link>
 
           <div className="flex items-center gap-3 sm:hidden">
-            <div className="group flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-2 py-1 shadow-[0_0_0_0_rgba(255,255,255,0.2)] transition-all duration-300 hover:border-white/60 hover:bg-white/15 hover:shadow-[0_0_16px_0_rgba(255,255,255,0.25)]">
-              <span className="text-[10px] uppercase tracking-[0.2em] text-white/60">
-                Lang
-              </span>
-              <span className="text-xs font-semibold text-white/70">
-                {currentLangLabel}
-              </span>
+            <div className="relative flex items-center rounded-full border border-white/30 bg-white/10 p-1 shadow-[0_0_0_0_rgba(255,255,255,0.2)] transition-all duration-300 hover:border-white/60 hover:bg-white/15 hover:shadow-[0_0_16px_0_rgba(255,255,255,0.25)]">
+              <span
+                aria-hidden="true"
+                className={`absolute left-1 top-1 h-[calc(100%-0.5rem)] w-[calc(50%-0.25rem)] rounded-full bg-white shadow transition-transform duration-300 ${
+                  isTr ? "translate-x-0" : "translate-x-full"
+                }`}
+              />
               <Link
-                href={`/${oppositeLang}`}
+                href="/tr"
                 title={switchTitle}
-                aria-label={switchTitle}
-                className="relative overflow-hidden rounded-full bg-white px-2 py-1 text-[11px] font-semibold text-black shadow transition duration-300 hover:bg-white/90 group-hover:scale-[1.02]"
+                aria-label="Switch to Turkish"
+                className={`relative z-10 min-w-[44px] rounded-full px-3 py-1 text-[11px] font-semibold transition-colors ${
+                  isTr ? "text-black" : "text-white/70"
+                }`}
               >
-                <span
-                  aria-hidden="true"
-                  className="absolute -top-1 -right-1 h-2 w-2 rounded-full bg-emerald-400/90 shadow-[0_0_8px_rgba(52,211,153,0.8)]"
-                />
-                <span
-                  aria-hidden="true"
-                  className="absolute -top-1 -right-1 h-2 w-2 rounded-full bg-emerald-400/60 animate-ping"
-                />
-                {oppositeLangLabel}
+                TR
+              </Link>
+              <Link
+                href="/en"
+                title={switchTitle}
+                aria-label="Switch to English"
+                className={`relative z-10 min-w-[44px] rounded-full px-3 py-1 text-[11px] font-semibold transition-colors ${
+                  isTr ? "text-white/70" : "text-black"
+                }`}
+              >
+                EN
               </Link>
             </div>
             <button
@@ -111,28 +116,32 @@ export default function Navbar({
             >
               {labels.contact}
             </Link>
-            <div className="group ml-2 flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-2 py-1 shadow-[0_0_0_0_rgba(255,255,255,0.2)] transition-all duration-300 hover:border-white/60 hover:bg-white/15 hover:shadow-[0_0_16px_0_rgba(255,255,255,0.25)]">
-              <span className="text-[10px] uppercase tracking-[0.2em] text-white/60">
-                Lang
-              </span>
-              <span className="text-xs font-semibold text-white/70">
-                {currentLangLabel}
-              </span>
+            <div className="relative ml-2 flex items-center rounded-full border border-white/30 bg-white/10 p-1 shadow-[0_0_0_0_rgba(255,255,255,0.2)] transition-all duration-300 hover:border-white/60 hover:bg-white/15 hover:shadow-[0_0_16px_0_rgba(255,255,255,0.25)]">
+              <span
+                aria-hidden="true"
+                className={`absolute left-1 top-1 h-[calc(100%-0.5rem)] w-[calc(50%-0.25rem)] rounded-full bg-white shadow transition-transform duration-300 ${
+                  isTr ? "translate-x-0" : "translate-x-full"
+                }`}
+              />
               <Link
-                href={`/${oppositeLang}`}
+                href="/tr"
                 title={switchTitle}
-                aria-label={switchTitle}
-                className="relative overflow-hidden rounded-full bg-white px-2 py-1 text-[11px] font-semibold text-black shadow transition duration-300 hover:bg-white/90 group-hover:scale-[1.02]"
+                aria-label="Switch to Turkish"
+                className={`relative z-10 min-w-[44px] rounded-full px-3 py-1 text-[11px] font-semibold transition-colors ${
+                  isTr ? "text-black" : "text-white/70"
+                }`}
               >
-                <span
-                  aria-hidden="true"
-                  className="absolute -top-1 -right-1 h-2 w-2 rounded-full bg-emerald-400/90 shadow-[0_0_8px_rgba(52,211,153,0.8)]"
-                />
-                <span
-                  aria-hidden="true"
-                  className="absolute -top-1 -right-1 h-2 w-2 rounded-full bg-emerald-400/60 animate-ping"
-                />
-                {oppositeLangLabel}
+                TR
+              </Link>
+              <Link
+                href="/en"
+                title={switchTitle}
+                aria-label="Switch to English"
+                className={`relative z-10 min-w-[44px] rounded-full px-3 py-1 text-[11px] font-semibold transition-colors ${
+                  isTr ? "text-white/70" : "text-black"
+                }`}
+              >
+                EN
               </Link>
             </div>
           </div>
