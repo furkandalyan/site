@@ -46,7 +46,7 @@ export default function Navbar({
           </Link>
 
           <div className="flex items-center gap-3 sm:hidden">
-            <div className="flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-2 py-1">
+            <div className="group flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-2 py-1 shadow-[0_0_0_0_rgba(255,255,255,0.2)] transition-all duration-300 hover:border-white/60 hover:bg-white/15 hover:shadow-[0_0_16px_0_rgba(255,255,255,0.25)]">
               <span className="text-[10px] uppercase tracking-[0.2em] text-white/60">
                 Lang
               </span>
@@ -57,8 +57,16 @@ export default function Navbar({
                 href={`/${oppositeLang}`}
                 title={switchTitle}
                 aria-label={switchTitle}
-                className="rounded-full bg-white px-2 py-1 text-[11px] font-semibold text-black shadow hover:bg-white/90 transition"
+                className="relative overflow-hidden rounded-full bg-white px-2 py-1 text-[11px] font-semibold text-black shadow transition duration-300 hover:bg-white/90 group-hover:scale-[1.02]"
               >
+                <span
+                  aria-hidden="true"
+                  className="absolute -top-1 -right-1 h-2 w-2 rounded-full bg-emerald-400/90 shadow-[0_0_8px_rgba(52,211,153,0.8)]"
+                />
+                <span
+                  aria-hidden="true"
+                  className="absolute -top-1 -right-1 h-2 w-2 rounded-full bg-emerald-400/60 animate-ping"
+                />
                 {oppositeLangLabel}
               </Link>
             </div>
@@ -103,7 +111,7 @@ export default function Navbar({
             >
               {labels.contact}
             </Link>
-            <div className="ml-2 flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-2 py-1">
+            <div className="group ml-2 flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-2 py-1 shadow-[0_0_0_0_rgba(255,255,255,0.2)] transition-all duration-300 hover:border-white/60 hover:bg-white/15 hover:shadow-[0_0_16px_0_rgba(255,255,255,0.25)]">
               <span className="text-[10px] uppercase tracking-[0.2em] text-white/60">
                 Lang
               </span>
@@ -114,8 +122,16 @@ export default function Navbar({
                 href={`/${oppositeLang}`}
                 title={switchTitle}
                 aria-label={switchTitle}
-                className="rounded-full bg-white px-2 py-1 text-[11px] font-semibold text-black shadow hover:bg-white/90 transition"
+                className="relative overflow-hidden rounded-full bg-white px-2 py-1 text-[11px] font-semibold text-black shadow transition duration-300 hover:bg-white/90 group-hover:scale-[1.02]"
               >
+                <span
+                  aria-hidden="true"
+                  className="absolute -top-1 -right-1 h-2 w-2 rounded-full bg-emerald-400/90 shadow-[0_0_8px_rgba(52,211,153,0.8)]"
+                />
+                <span
+                  aria-hidden="true"
+                  className="absolute -top-1 -right-1 h-2 w-2 rounded-full bg-emerald-400/60 animate-ping"
+                />
                 {oppositeLangLabel}
               </Link>
             </div>
