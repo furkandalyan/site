@@ -21,6 +21,10 @@ export default function Navbar({
   labels: NavLabels;
 }) {
   const [open, setOpen] = useState(false);
+  const currentLangLabel = lang.toUpperCase();
+  const oppositeLangLabel = oppositeLang.toUpperCase();
+  const switchTitle =
+    oppositeLang === "tr" ? "Switch to Turkish" : "Switch to English";
 
   return (
     <nav className="sticky top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur-md backdrop-saturate-150 supports-[backdrop-filter]:bg-black/60">
@@ -42,12 +46,22 @@ export default function Navbar({
           </Link>
 
           <div className="flex items-center gap-3 sm:hidden">
-            <Link
-              href={`/${oppositeLang}`}
-              className="px-3 py-1 rounded-full bg-white/10 hover:bg-white/20 text-xs transition-all duration-200 border border-transparent hover:border-white/10"
-            >
-              {oppositeLang.toUpperCase()}
-            </Link>
+            <div className="flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-2 py-1">
+              <span className="text-[10px] uppercase tracking-[0.2em] text-white/60">
+                Lang
+              </span>
+              <span className="text-xs font-semibold text-white/70">
+                {currentLangLabel}
+              </span>
+              <Link
+                href={`/${oppositeLang}`}
+                title={switchTitle}
+                aria-label={switchTitle}
+                className="rounded-full bg-white px-2 py-1 text-[11px] font-semibold text-black shadow hover:bg-white/90 transition"
+              >
+                {oppositeLangLabel}
+              </Link>
+            </div>
             <button
               type="button"
               onClick={() => setOpen((value) => !value)}
@@ -89,12 +103,22 @@ export default function Navbar({
             >
               {labels.contact}
             </Link>
-            <Link
-              href={`/${oppositeLang}`}
-              className="ml-2 px-3 py-1 rounded-full bg-white/10 hover:bg-white/20 text-xs transition-all duration-200 border border-transparent hover:border-white/10"
-            >
-              {oppositeLang.toUpperCase()}
-            </Link>
+            <div className="ml-2 flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-2 py-1">
+              <span className="text-[10px] uppercase tracking-[0.2em] text-white/60">
+                Lang
+              </span>
+              <span className="text-xs font-semibold text-white/70">
+                {currentLangLabel}
+              </span>
+              <Link
+                href={`/${oppositeLang}`}
+                title={switchTitle}
+                aria-label={switchTitle}
+                className="rounded-full bg-white px-2 py-1 text-[11px] font-semibold text-black shadow hover:bg-white/90 transition"
+              >
+                {oppositeLangLabel}
+              </Link>
+            </div>
           </div>
         </div>
 
