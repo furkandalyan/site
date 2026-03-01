@@ -25,6 +25,22 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.navbar {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 32px;
+  width: 32px;
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  opacity: 0.7;
+}
+
 .project-content {
   color: rgba(255, 255, 255, 0.72);
   font-size: 1.0625rem;

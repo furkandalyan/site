@@ -13,7 +13,7 @@ export default function Footer({ lang }: { lang: string }) {
           aria-label="Home"
         >
           <Image
-            src="/logo.png"
+            src="/logo4.svg"
             alt="Logo"
             width={28}
             height={28}

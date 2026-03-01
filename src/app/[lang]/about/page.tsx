@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default async function About({
   params,
 }: {
@@ -10,6 +12,16 @@ export default async function About({
     <div className="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
       <header className="mb-20 text-center relative">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] h-[200px] bg-white/5 rounded-full blur-[100px] -z-10 pointer-events-none"></div>
+        <div className="mb-6 flex justify-center">
+          <Image
+            src="/logo4.svg"
+            alt="Logo"
+            width={80}
+            height={80}
+            className="h-20 w-20"
+            priority
+          />
+        </div>
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6 bg-gradient-to-b from-white via-white/90 to-white/50 bg-clip-text text-transparent">
           Mahir Furkan Dalyan
         </h1>

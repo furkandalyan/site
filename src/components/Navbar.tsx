@@ -29,28 +29,28 @@ export default function Navbar({
 
   return (
     <nav className="sticky top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur-md backdrop-saturate-150 supports-[backdrop-filter]:bg-black/60">
-      <div className="mx-auto max-w-screen-xl px-4 sm:px-6">
-        <div className="flex h-14 items-center justify-between">
+      <div className="mx-auto max-w-screen-xl px-3 sm:px-5">
+        <div className="navbar justify-between">
           <Link
             href={`/${lang}`}
             className="inline-flex items-center gap-3 hover:opacity-80 transition-opacity duration-200"
             aria-label="Home"
           >
             <Image
-              src="/logo.png"
-              alt="Logo"
-              width={36}
-              height={36}
-              className="h-9 w-9"
+              src="/logo3.svg"
+              alt="M"
+              width={32}
+              height={32}
+              className="logo"
               priority
             />
           </Link>
 
           <div className="flex items-center gap-3 sm:hidden">
-            <div className="relative flex items-center rounded-full border border-white/30 bg-white/10 p-1 shadow-[0_0_0_0_rgba(255,255,255,0.2)] transition-all duration-300 hover:border-white/60 hover:bg-white/15 hover:shadow-[0_0_16px_0_rgba(255,255,255,0.25)]">
+            <div className="relative flex items-center rounded-full border border-white/15 bg-white/5 p-1 shadow-[0_0_0_0_rgba(255,255,255,0.12)] transition-all duration-300 hover:border-white/35 hover:bg-white/10 hover:shadow-[0_0_12px_0_rgba(255,255,255,0.18)]">
               <span
                 aria-hidden="true"
-                className={`absolute left-1 top-1 h-[calc(100%-0.5rem)] w-[calc(50%-0.25rem)] rounded-full bg-white shadow transition-transform duration-300 ${
+                className={`absolute left-1 top-1 h-[calc(100%-0.5rem)] w-[calc(50%-0.25rem)] rounded-full bg-white/80 shadow transition-transform duration-300 ${
                   isTr ? "translate-x-0" : "translate-x-full"
                 }`}
               />
@@ -59,7 +59,7 @@ export default function Navbar({
                 title={switchTitle}
                 aria-label="Switch to Turkish"
                 className={`relative z-10 min-w-[44px] rounded-full px-3 py-1 text-[11px] font-semibold transition-colors ${
-                  isTr ? "text-black" : "text-white/70"
+                  isTr ? "text-black/90" : "text-white/60"
                 }`}
               >
                 TR
@@ -69,7 +69,7 @@ export default function Navbar({
                 title={switchTitle}
                 aria-label="Switch to English"
                 className={`relative z-10 min-w-[44px] rounded-full px-3 py-1 text-[11px] font-semibold transition-colors ${
-                  isTr ? "text-white/70" : "text-black"
+                  isTr ? "text-white/60" : "text-black/90"
                 }`}
               >
                 EN
@@ -91,7 +91,7 @@ export default function Navbar({
             </button>
           </div>
 
-          <div className="hidden sm:flex items-center gap-6 text-[13px] font-medium text-white/80">
+          <div className="hidden sm:flex items-center gap-8 text-[13px] font-medium text-white/80">
             <Link
               href={`/${lang}/projects`}
               className="hover:text-white transition-colors duration-200"
@@ -116,10 +116,10 @@ export default function Navbar({
             >
               {labels.contact}
             </Link>
-            <div className="relative ml-2 flex items-center rounded-full border border-white/30 bg-white/10 p-1 shadow-[0_0_0_0_rgba(255,255,255,0.2)] transition-all duration-300 hover:border-white/60 hover:bg-white/15 hover:shadow-[0_0_16px_0_rgba(255,255,255,0.25)]">
+            <div className="relative ml-2 flex items-center rounded-full border border-white/15 bg-white/5 p-1 shadow-[0_0_0_0_rgba(255,255,255,0.12)] transition-all duration-300 hover:border-white/35 hover:bg-white/10 hover:shadow-[0_0_12px_0_rgba(255,255,255,0.18)]">
               <span
                 aria-hidden="true"
-                className={`absolute left-1 top-1 h-[calc(100%-0.5rem)] w-[calc(50%-0.25rem)] rounded-full bg-white shadow transition-transform duration-300 ${
+                className={`absolute left-1 top-1 h-[calc(100%-0.5rem)] w-[calc(50%-0.25rem)] rounded-full bg-white/80 shadow transition-transform duration-300 ${
                   isTr ? "translate-x-0" : "translate-x-full"
                 }`}
               />
@@ -128,7 +128,7 @@ export default function Navbar({
                 title={switchTitle}
                 aria-label="Switch to Turkish"
                 className={`relative z-10 min-w-[44px] rounded-full px-3 py-1 text-[11px] font-semibold transition-colors ${
-                  isTr ? "text-black" : "text-white/70"
+                  isTr ? "text-black/90" : "text-white/60"
                 }`}
               >
                 TR
@@ -138,7 +138,7 @@ export default function Navbar({
                 title={switchTitle}
                 aria-label="Switch to English"
                 className={`relative z-10 min-w-[44px] rounded-full px-3 py-1 text-[11px] font-semibold transition-colors ${
-                  isTr ? "text-white/70" : "text-black"
+                  isTr ? "text-white/60" : "text-black/90"
                 }`}
               >
                 EN

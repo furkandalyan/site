@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { getProjectsByLang } from "@/src/lib/projects";
 
@@ -86,6 +87,16 @@ export default async function Home({
     <div className="flex flex-col items-center justify-center min-h-screen px-4 py-20">
       {/* Hero Section */}
       <div className="text-center max-w-5xl mx-auto mb-32">
+        <div className="mb-8 flex justify-center">
+          <Image
+            src="/logo4.svg"
+            alt="Logo"
+            width={96}
+            height={96}
+            className="h-20 w-20"
+            priority
+          />
+        </div>
         <div className="relative mb-8 inline-block">
           <div className="absolute -inset-1 bg-gradient-to-r from-white/20 to-white/5 rounded-full blur opacity-20 animate-pulse"></div>
           <div className="relative px-4 py-1.5 rounded-full border border-white/10 bg-white/5 text-sm text-white/80 backdrop-blur-sm">

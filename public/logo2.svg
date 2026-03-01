@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
-  <circle cx="256" cy="256" r="170" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"></circle>
+  <circle cx="256" cy="256" r="170" stroke="#FFFFFF" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"></circle>
 
   <path d="M190 320
            C195 285, 210 250, 235 235
@@ -7,5 +7,5 @@
            C248 295, 270 305, 286 275
            C302 245, 330 195, 352 175
            C370 160, 382 168, 374 198
-           C364 236, 350 292, 346 334" stroke="currentColor" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"></path>
+           C364 236, 350 292, 346 334" stroke="#FFFFFF" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"></path>
 </svg>
